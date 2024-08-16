@@ -1,20 +1,29 @@
 const datas = {
-    uk: {},
-    eng: {
+    uk: {
         docs: [
             {
-                title: 'What remove Accaount ?',
+                title: 'Як видалити аккаунт',
                 texts: [ ]
             },
             {
-                title: 'What add worker ?',
-                texts: [
-                    {
-                        class : ''
-                    }
-                ]
+                title: 'Як відплити співробітника',
+                texts: [ ]
+            },
+        ]
+    },
+    eng: {
+        docs: [
+            {
+                title: 'What remove Accaount ',
+                texts: [ ]
+            },
+            {
+                title: 'What add worker ',
+                texts: [ ]
             },
 
         ]
     }
 }
+
+const lang = datas['uk']['docs'];
