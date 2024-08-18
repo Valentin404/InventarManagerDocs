@@ -2,10 +2,6 @@ console.log(lang);
 
 const questionsSection = document.querySelector(".questions");
 
-//const questionsMarkup = lang.map(question => {
-//return `<p class="q_title">${question.title}</p><p class="q_text">${question.texts[0]}</p>`
-//} ).join('');
-
 lang.map((q) => {
   let visible = false;
   const question = document.createElement("li");
@@ -22,9 +18,7 @@ const filter = () => {
   questions.forEach((q) => {
     const qText = q.textContent.toLocaleLowerCase();
     if (qText.includes(filterText)) {
-      let text = q.textContent;
-      let regex = new RegExp(filterText, "gi");
-      let highLightText = text.replace(regex, `<span class="highLight">${filterText}</span>`);
+      let highLightText = qText.replace(filterText, `<span class="highLight">${filterText}</span>`);
       q.innerHTML = highLightText;
       console.log(q.innerHTML)
       q.classList.remove("hidden");
@@ -35,5 +29,3 @@ const filter = () => {
 }
 
 searchedInput.addEventListener("input", filter);
-
-//questionsSection.innerHTML =  questionsMarkup;
