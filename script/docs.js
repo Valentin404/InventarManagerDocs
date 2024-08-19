@@ -4,7 +4,7 @@ const questionsSection = document.querySelector(".questions");
 
 lang.map((q) => {
   let visible = false;
-  const question = document.createElement("li");
+  const question = document.createElement("a");
   question.classList.add("question");
   question.textContent = q.title;
   questionsSection.append(question);
