@@ -2,7 +2,7 @@ console.log(lang);
 
 const questionsSection = document.querySelector(".questions");
 
-lang.map((q) => {
+lang.forEach((q) => {
   let visible = false;
   const question = document.createElement("a");
   question.classList.add("question");
