@@ -15,9 +15,9 @@ const filter = () => {
   const filterText = searchedInput.value.toLowerCase();
 
   questions.forEach((q) => {
-    const qText = q.textContent.toLocaleLowerCase();
+    const qText = q.textContent.toLowerCase();
     if (qText.includes(filterText)) {
-      q.innerHTML = qText.replace(filterText, `<span class="highLight">${filterText}</span>`);
+      q.innerHTML = q.textContent.replace(new RegExp(filterText, 'gi'), (match) => `<span class="highLight">${match}</span>`);
       q.classList.remove("hidden");
     } else {
       q.classList.add("hidden");
