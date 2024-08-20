@@ -17,8 +17,7 @@ const filter = () => {
   questions.forEach((q) => {
     const qText = q.textContent.toLocaleLowerCase();
     if (qText.includes(filterText)) {
-      let highLightText = qText.replace(filterText, `<span class="highLight">${filterText}</span>`);
-      q.innerHTML = highLightText;
+      q.innerHTML = q.textContent.replace(filterText, `<span class="highLight">${filterText}</span>`);
       q.classList.remove("hidden");
     } else {
       q.classList.add("hidden");
