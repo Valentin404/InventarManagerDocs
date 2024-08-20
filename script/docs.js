@@ -20,7 +20,6 @@ const filter = () => {
     if (qText.includes(filterText)) {
       let highLightText = qText.replace(filterText, `<span class="highLight">${filterText}</span>`);
       q.innerHTML = highLightText;
-      console.log(q.innerHTML)
       q.classList.remove("hidden");
     } else {
       q.classList.add("hidden");
