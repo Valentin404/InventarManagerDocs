@@ -16,7 +16,7 @@ const filter = () => {
   const filterText = searchedInput.value.toLowerCase();
 
   questions.forEach((q) => {
-    const qText = q.textContent.toLocaleLowerCase();
+    const qText = q.textContent;
     if (qText.includes(filterText)) {
       let highLightText = qText.replace(filterText, `<span class="highLight">${filterText}</span>`);
       q.innerHTML = highLightText;
