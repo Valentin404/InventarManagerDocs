@@ -12,7 +12,7 @@ lang.forEach((q) => {
 const questions = document.querySelectorAll(".question");
 
 const filter = () => {
-  const filterText = searchedInput.value.toLowerCase();
+  const filterText = searchedInput.value.toLocaleLowerCase();
 
   questions.forEach((q) => {
     const qText = q.textContent.toLocaleLowerCase();
