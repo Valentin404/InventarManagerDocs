@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+:root {
+  --bg-body: rgb(33, 34, 34);
+  --bg-green: rgb(104, 255, 183);
+
+  --color-white: rgb(234, 234, 234);
+  --font-play: "Play", sans-serif;
+
+  --font-size-big: 32px;
+  --font-size-mid: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  text-decoration: none;
+}
+/* size */
+.max-1200 {
+  max-width: 1200px;
+  width: 96%;
+}
+/* flex */
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row-beetween {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* https://play.google.com/store/apps/details?id=com.valik404.inventorymanager */
+
+body {
+  background-color: var(--bg-body);
+  overflow-x: hidden;
+}
+
+/* header */
+
+header {
+  height: 78px;
+  gap: 20px;
+}
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 62px;
+}
+.logo img {
+  height: 100%;
+}
+.logoTitle {
+  color: var(--color-white);
+  font-family: var(--font-play);
+  font-size: var(--font-size-big);
+  line-height: 35px;
+  letter-spacing: -0.49px;
+  font-weight: 400;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  max-width: 468px;
+}
+nav .link {
+    color: var(--color-white);
+    font-family: var(--font-play);
+    font-size: var(--font-play);
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.49px;
+    transform: all .3s;
+}
+.link-c {
+    position: relative;
+}
+
+
+.active-decor {
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 160%;
+    left: -30%;
+    z-index: 2;
+    filter: blur(10px);
+}
+.link-c:hover .active-decor {
+    background-color: rgba(26, 73, 48, 1);
+    width: 140%;
+    left: -20%;
+}
+
+nav .link-active .active-decor {
+    background-color: rgba(26, 73, 48, .8);
+}
+
+
+
+.link-c:hover .link { 
+    position: relative;
+    text-decoration: underline;
+    color: var(--bg-green);
+    background-color: transparent;
+    z-index: 3;
+}
+
+nav .link.active { 
+    position: relative;
+    text-decoration: underline;
+    color: var(--bg-green);
+    background-color: transparent;
+    z-index: 3;
+}
+
+/* download */
+
+.a-download-c {
+  position: relative;
+}
+
+.a-download-c:hover .a-download-dec {
+  width: 160%;
+  height: 430%;
+  transform: translate(-19%, -36%);
+}
+.a-download-dec {
+  position: absolute;
+
+  width: 130%;
+  height: 300%;
+
+  transform: translate(-10%, -35%);
+  transition: all 0.3s;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(26, 73, 48),
+    rgba(26, 73, 48, 0) 100%
+  );
+  border-radius: 30px;
+}
+
+.a-download {
+  position: relative;
+  z-index: 2;
+  padding: 12px 52px;
+  color: var(--bg-body);
+  font-family: var(--font-play);
+  font-size: var(--font-size-mid);
+  font-weight: 400;
+  border-radius: 30px;
+  background: var(--bg-green);
+}
