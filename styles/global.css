@@ -3,11 +3,16 @@
   --bg-body: rgb(33, 34, 34);
   --bg-green: rgb(104, 255, 183);
 
+  --bg-vector: rgb(255, 251, 158);
+
   --color-white: rgb(234, 234, 234);
   --font-play: "Play", sans-serif;
-
+  
+  --font-size-title: 48px;
   --font-size-big: 32px;
   --font-size-mid: 24px;
+
+  --font-weight-default: 400;
 }
 
 * {
