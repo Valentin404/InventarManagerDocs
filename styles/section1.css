@@ -1,4 +1,5 @@
 .wrapper {
+  max-width: 900px;
 }
 .content {
   font-family: var(--font-play);
@@ -13,12 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.lorem {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .lorem_title {
@@ -101,7 +96,7 @@
   position: absolute;
   width: 195.51px;
   height: 195.51px;
-  top: 320px;
+  top: 330px;
   left: 170px;
   z-index: -1;
   background: radial-gradient(
