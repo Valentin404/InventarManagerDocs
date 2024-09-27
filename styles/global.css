@@ -27,11 +27,26 @@
   max-width: 1200px;
   width: 96%;
 }
+.max-750 {
+  max-width: 750px;
+  width: 96%;
+}
 /* flex */
 .center-column {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.beetween-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
 }
 .row-beetween {
@@ -167,4 +182,15 @@ nav .link.active {
   font-weight: 400;
   border-radius: 30px;
   background: var(--bg-green);
+}
+
+
+/* footer */
+
+.footer-left-cont {
+    margin: 25px 0 50px 0;
+}
+.right-footer {
+    width: auto;
+    gap: 14px;
 }
