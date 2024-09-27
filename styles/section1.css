@@ -52,12 +52,6 @@
   gap: 10px;
 }
 
-.inline {
-  /* display: inline; */
-  width: auto;
-  display: flex;
-  justify-content: flex-start;
-}
 
 .phone_3 {
   position: relative;
