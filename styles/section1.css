@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 900px;
+  max-width: 1200px;
 }
 .content {
   font-family: var(--font-play);
@@ -14,12 +14,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.left_row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 0 1 50%;
 }
 
 .lorem_title {
   margin-bottom: 14px;
-  width: 350px;
-  font-size: var(--font-size-big);
+  font-size: 2.9vw;
   font-weight: 400;
   line-height: 36px;
 }
@@ -27,8 +35,7 @@
 .lorem_text {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  font-size: var(--font-size-little);
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0%;
@@ -46,14 +53,11 @@
 
 .phone_3 {
   position: relative;
-  margin-right: 90px;
-  display: flex;
-  background-image: url(/images/phone3.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 233.13px;
-  height: 494.2px;
+  margin-right: 110px;
+}
+
+.phone {
+  width: 19vw;
 }
 
 .phone_3 .qr {
@@ -62,23 +66,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 152.5px;
+  width: 10vw;
   padding: 10.5px 2px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   background: rgba(33, 34, 34, 0.7);
   position: absolute;
-  top: 52px;
-  left: 165px;
+  top: 5vw;
+  left: 15vw;
 }
 
 .phone_3 .qr p {
-  font-size: 12px;
+  font-size: 0.9vw;
   font-weight: bold;
 }
 
 .phone_3 .qr .qr_playmarket {
-  width: 89.001px;
+  width: 7vw;
 }
 
 .phone_3 .scan {
@@ -87,17 +91,17 @@
   border-radius: 20px;
   background: rgba(33, 34, 34, 0.7);
   position: absolute;
-  width: 116.67px;
-  top: 202px;
-  right: 175px;
+  width: 8.7vw;
+  top: 17vw;
+  right: 14.7vw;
 }
 
 .phone_3 .ellipse12 {
   position: absolute;
-  width: 195.51px;
-  height: 195.51px;
-  top: 330px;
-  left: 170px;
+  width: 15vw;
+  height: 15vw;
+  top: 26vw;
+  left: 13vw;
   z-index: -1;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -108,10 +112,10 @@
 
 .phone_3 .ellipse11 {
   position: absolute;
-  width: 284px;
-  height: 284px;
-  top: 115px;
-  left: -130px;
+  width: 21vw;
+  height: 21vw;
+  top: 10vw;
+  left: -10.5vw;
   z-index: -1;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -122,10 +126,10 @@
 
 .phone_3 .ellipse14 {
   position: absolute;
-  width: 232.4px;
-  height: 232.4px;
-  top: 0px;
-  left: 150px;
+  width: 21vw;
+  height: 21vw;
+  top: 0;
+  left: 10vw;
   z-index: -1;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -136,9 +140,9 @@
 
 .table_png {
   position: absolute;
-  width: 155.4px;
-  top: 365px;
-  left: 155px;
+  width: 13vw;
+  top: 28.5vw;
+  left: 12vw;
 }
 
 .row_2 {
