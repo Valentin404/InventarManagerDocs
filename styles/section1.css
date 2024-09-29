@@ -17,22 +17,18 @@
   width: 100%;
 }
 
-.left_row {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+.left_hi_column {
   flex: 0 1 40%;
 }
 
-.lorem_title {
+.hi_title {
   margin-bottom: 14px;
   font-size: 2.9vw;
   font-weight: 400;
   line-height: 36px;
 }
 
-.lorem_text {
+.hi_text {
   display: flex;
   flex-direction: column;
   font-size: 1.2vw;
