@@ -162,6 +162,8 @@ nav .link.active {
 
 .a-download-c {
   position: relative;
+  height: 56px;
+  transform: translateY(14px);
 }
 
 .a-download-c:hover .a-download-dec {
@@ -195,10 +197,6 @@ nav .link.active {
   font-weight: 400;
   border-radius: 30px;
   background: var(--bg-green);
-}
-
-.download-center {
-transform: translateY(20px);
 }
 
 /* footer */
