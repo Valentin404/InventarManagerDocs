@@ -35,18 +35,16 @@
   background-color: var(--bg-decor);
   border: 0.5px solid var(--bg-decor-border);
   width: 30%;
-  height: 100px;
+  height: 16%;
 }
 
 .hero-decor-boll {
   position: absolute;
-  width: 19vw;
-  height: 19vw;
   z-index: -1;
 }
 
 .hero-decor-1 {
-  padding: 25px 9px;
+  padding: 4% 1%;
   left: 60%;
   top: 12%;
 }
@@ -59,11 +57,17 @@
   width: 60%;
 }
 .hero-decor-1 .hero-decor-boll {
+  width: 160%;
+  height: 190%;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(26, 73, 48),
     rgba(26, 73, 48, 0) 100%
   );
+}
+
+.hero-decor-1 .hero-decor-2 .hero-decor-boll  {
+  
 }
 
 .hero-decor-2 {
@@ -73,6 +77,8 @@
   width: 80%;
 }
 .hero-decor-2 .hero-decor-boll {
+  width: 160%;
+  height: 250%;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(73, 26, 26),
@@ -90,6 +96,8 @@
   width: 115%;
 }
 .hero-decor-3 .hero-decor-boll {
+  width: 160%;
+  height: 300%;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(66, 67, 42),
