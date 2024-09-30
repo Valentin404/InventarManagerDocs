@@ -47,13 +47,49 @@
 
 .hero-decor-1 {
   padding: 25px 9px;
-  left: 0;
-  top: 0;
+  left: 60%;
+  top: 12%;
+}
+.hero-decor-1 h2 {
+  color: var(--color-full-white);
+  font-size: var(--font-size-qr);
+  font-family: var(--font-play);
 }
 .hero-decor-1 img {
   width: 60%;
 }
 .hero-decor-1 .hero-decor-boll {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(26, 73, 48),
+    rgba(26, 73, 48, 0) 100%
+  );
+}
+
+.hero-decor-2 {
+  right: 64%;
+}
+.hero-decor-2 img {
+  width: 80%;
+}
+.hero-decor-2 .hero-decor-boll {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(73, 26, 26),
+    rgba(73, 26, 26, 0) 100%
+  );
+}
+
+.hero-decor.hero-decor-3 {
+  border: none;
+  background: none;
+  top: 77%;
+  left: 60%;
+}
+.hero-decor-3 img {
+  width: 115%;
+}
+.hero-decor-3 .hero-decor-boll {
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(66, 67, 42),
