@@ -4,15 +4,20 @@
   --bg-green: rgb(104, 255, 183);
 
   --bg-vector: rgb(255, 251, 158);
+  --bg-decor: rgba(33, 34, 34, 0.75);
+  --bg-decor-border: rgba(255, 255, 255, 0.5);
 
   --color-white: rgb(234, 234, 234);
   --color-full-white: rgb(255, 255, 255);
+
   --font-play: "Play", sans-serif;
 
   --font-size-very-big: 48px;
   --font-size-big: 32px;
   --font-size-mid: 24px;
   --font-size-text: 20px;
+
+  --radius : 20px;
 }
 
 * {

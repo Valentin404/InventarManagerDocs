@@ -1,30 +1,62 @@
 .hero-g {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 56px 0 175px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 56px 0 175px 0;
 }
 .hero-left {
-    width: 47%;
+  width: 47%;
 }
 .hero-list-c {
-    padding-left: 30px;
-    gap: 5px;
+  padding-left: 30px;
+  gap: 5px;
 }
 .point {
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    background-color: var(--color-full-white);
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: var(--color-full-white);
 }
 
 .hero-right {
-    width: 50%;
-    height: 100%;
-    background-color: red;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  /* background-color: red; */
 }
 
 .hero-phone {
-    max-width: 304px;
-    width: 52%;
+  max-width: 304px;
+  width: 52%;
+}
+.hero-decor {
+  position: absolute;
+  border-radius: var(--radius);
+  background-color: var(--bg-decor);
+  border: 0.5px solid var(--bg-decor-border);
+  width: 30%;
+  height: 100px;
+}
+
+.hero-decor-boll {
+  position: absolute;
+  width: 160%;
+  height: 160%;
+  z-index: -1;
+}
+
+.hero-decor-1 {
+  padding: 25px 9px;
+  left: 0;
+  top: 0;
+}
+.hero-decor-1 img {
+  width: 60%;
+}
+.hero-decor-1 .hero-decor-boll {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(66, 67, 42),
+    rgba(66, 67, 42, 0) 100%
+  );
 }
