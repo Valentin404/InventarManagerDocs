@@ -58,10 +58,6 @@
 }
 
 .phone_3 .qr {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   width: 15.68vw;
   height: 18.5%;
