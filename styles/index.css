@@ -1,0 +1,30 @@
+.hero-g {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 56px 0 175px 0;
+}
+.hero-left {
+    width: 47%;
+}
+.hero-list-c {
+    padding-left: 30px;
+    gap: 5px;
+}
+.point {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: var(--color-full-white);
+}
+
+.hero-right {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.hero-phone {
+    max-width: 304px;
+    width: 52%;
+}
