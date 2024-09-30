@@ -4,10 +4,13 @@
   --bg-green: rgb(104, 255, 183);
 
   --color-white: rgb(234, 234, 234);
+  --color-full-white: rgb(255, 255, 255);
   --font-play: "Play", sans-serif;
 
+  --font-size-very-big: 48px;
   --font-size-big: 32px;
   --font-size-mid: 24px;
+  --font-size-text: 20px;
 }
 
 * {
@@ -33,6 +36,11 @@
   align-items: center;
   justify-content: center;
 }
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .beetween-start {
   display: flex;
   align-items: flex-start;
@@ -50,12 +58,22 @@
   align-items: center;
   justify-content: space-between;
 }
-
+/* size */
+.mb25 {
+  margin-bottom: 25px;
+}
 /* https://play.google.com/store/apps/details?id=com.valik404.inventorymanager */
 
 body {
   background-color: var(--bg-body);
   overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* header */
@@ -64,6 +82,7 @@ header {
   height: 78px;
   gap: 20px;
 }
+
 /* logo */
 .logo {
   display: flex;
@@ -89,55 +108,52 @@ nav {
   max-width: 468px;
 }
 nav .link {
-    color: var(--color-white);
-    font-family: var(--font-play);
-    font-size: var(--font-play);
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: -0.49px;
-    transform: all .3s;
+  color: var(--color-white);
+  font-family: var(--font-play);
+  font-size: var(--font-play);
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.49px;
+  transform: all 0.3s;
 }
 .link-c {
-    position: relative;
+  position: relative;
 }
-
 
 .active-decor {
-    transition: all .3s;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 160%;
-    left: -30%;
-    z-index: 2;
-    filter: blur(10px);
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 160%;
+  left: -30%;
+  z-index: 2;
+  filter: blur(10px);
 }
 .link-c:hover .active-decor {
-    background-color: rgba(26, 73, 48, 1);
-    width: 140%;
-    left: -20%;
+  background-color: rgba(26, 73, 48, 1);
+  width: 140%;
+  left: -20%;
 }
 
 nav .link-active .active-decor {
-    background-color: rgba(26, 73, 48, .8);
+  background-color: rgba(26, 73, 48, 0.8);
 }
 
-
-
-.link-c:hover .link { 
-    position: relative;
-    text-decoration: underline;
-    color: var(--bg-green);
-    background-color: transparent;
-    z-index: 3;
+.link-c:hover .link {
+  position: relative;
+  text-decoration: underline;
+  color: var(--bg-green);
+  background-color: transparent;
+  z-index: 3;
 }
 
-nav .link.active { 
-    position: relative;
-    text-decoration: underline;
-    color: var(--bg-green);
-    background-color: transparent;
-    z-index: 3;
+nav .link.active {
+  position: relative;
+  text-decoration: underline;
+  color: var(--bg-green);
+  background-color: transparent;
+  z-index: 3;
 }
 
 /* download */
@@ -170,7 +186,7 @@ nav .link.active {
 .a-download {
   position: relative;
   z-index: 2;
-  padding: 12px 52px;
+  padding: 14px 52px;
   color: var(--bg-body);
   font-family: var(--font-play);
   font-size: var(--font-size-mid);
@@ -179,13 +195,31 @@ nav .link.active {
   background: var(--bg-green);
 }
 
+.download-center {
+transform: translateY(20px);
+}
 
 /* footer */
 
 .footer-left-cont {
-    margin: 25px 0 50px 0;
+  margin: 25px 0 50px 0;
 }
 .right-footer {
-    width: auto;
-    gap: 14px;
+  width: auto;
+  gap: 14px;
+}
+
+/* text */
+
+.title {
+  color: var(--color-full-white);
+  font-family: var(--font-play);
+  font-size: var(--font-size-very-big);
+}
+
+.text {
+  color: var(--color-full-white);
+  font-family: var(--font-play);
+  font-size: var(--font-size-text);
+
 }
