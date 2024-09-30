@@ -223,3 +223,12 @@ transform: translateY(20px);
   font-size: var(--font-size-text);
 
 }
+
+
+@media screen and (max-width : 1000px) {
+  :root {  
+    --font-size-very-big: 40px;
+    --font-size-mid: 20px;
+    --font-size-text: 16px;
+  }
+}
