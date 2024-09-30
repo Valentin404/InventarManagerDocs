@@ -24,16 +24,16 @@
 
 .hi_title {
   margin-bottom: 2.1vw;
-  font-size: 3.3vw;
-  font-weight: 400;
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-default);
   line-height: 3.8vw;
 }
 
 .hi_text {
   display: flex;
   flex-direction: column;
-  font-size: 1.2vw;
-  font-weight: 400;
+  font-size: var(--font-size-mid);
+  font-weight: var(--font-weight-default);
   line-height: 1.4vw;
   letter-spacing: 0%;
   text-align: left;
@@ -50,7 +50,7 @@
 
 .phone_3 {
   position: relative;
-  margin-right: 10.36vw;
+  margin-right: 9vw;
 }
 
 .phone {
@@ -59,8 +59,8 @@
 
 .phone_3 .qr {
   text-align: center;
-  width: 15.68vw;
-  height: 18.5%;
+  width: 14.3vw;
+  height: 18.8%;
   padding: 1.4vw 0.1vw;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
@@ -71,12 +71,12 @@
 }
 
 .phone_3 .qr p {
-  font-size: 1vw;
+  font-size: var(--font-size-mid);
   font-weight: bold;
 }
 
 .phone_3 .qr .qr_playmarket {
-  width: 8.5vw;
+  width: 8.8vw;
 }
 
 .phone_3 .scan {

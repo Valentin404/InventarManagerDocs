@@ -8,11 +8,12 @@
   --color-white: rgb(234, 234, 234);
   --font-play: "Play", sans-serif;
   
-  --font-size-title: 43px;
+  /*--font-size-title: 43px;
   --font-size-big: 32px;
-  --font-size-mid: 24px;
-  --font-size-little: 14px;
-
+  --font-size-mid: 24px; */ 
+  
+  --font-size-title: 3.3vw;
+  --font-size-mid: 1.2vw;
   --font-weight-default: 400;
 }
 
