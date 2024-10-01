@@ -40,6 +40,7 @@
 
 .hero-decor-boll {
   position: absolute;
+  width: 160%;
   z-index: -1;
 }
 
@@ -57,7 +58,6 @@
   width: 60%;
 }
 .hero-decor-1 .hero-decor-boll {
-  width: 160%;
   height: 190%;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -74,7 +74,6 @@
   width: 80%;
 }
 .hero-decor-2 .hero-decor-boll {
-  width: 160%;
   height: 275%;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -93,7 +92,6 @@
   width: 115%;
 }
 .hero-decor-3 .hero-decor-boll {
-  width: 160%;
   height: 275%;
   background: radial-gradient(
     50% 50% at 50% 50%,
