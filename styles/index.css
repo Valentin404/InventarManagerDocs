@@ -253,10 +253,11 @@
   color: var(--bg-body);
 }
 .row-gradient h2 {
+  font-size: var(--font-size-very-big);
   margin-bottom: 35px;
 }
 .row-gradient p {
-  width: 67%;
+  width: 65%;
 }
 .google-play {
   width: 214px;
