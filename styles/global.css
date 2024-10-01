@@ -76,6 +76,9 @@
   justify-content: space-between;
 }
 /* size */
+.mb175 {
+  margin-bottom: 175px;
+}
 .mb25 {
   margin-bottom: 25px;
 }

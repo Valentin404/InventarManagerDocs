@@ -104,7 +104,6 @@
 .row-2 {
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 175px;
 }
 
 .box {
@@ -197,4 +196,40 @@
 }
 .round img {
   width: 75%;
+}
+
+.row-4 {
+  align-items: normal;
+}
+.row-4-text {
+  text-align: center;
+}
+.row-4-text p {
+  width: 62%;
+}
+.row-4-info {
+  margin-top: 5.5%;
+  justify-content: space-around;
+}
+.info h2 {
+  position: relative;
+  color: var(--bg-green);
+}
+.info-decor-boll {
+  position: absolute;
+  top: -100%;
+  right: -180%;
+  width: 430%;
+  height: 380%;
+  z-index: -1;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(26, 73, 48),
+    rgba(26, 73, 48, 0) 100%
+  );
+}
+.info p {
+  width: 75%;
+  font-size: var(--font-size-mid);
+  text-align: center;
 }
