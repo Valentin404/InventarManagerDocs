@@ -104,6 +104,7 @@
 .row-2 {
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 175px;
 }
 
 .box {
@@ -144,18 +145,33 @@
     rgba(66, 67, 42, 0) 100%
   );
 }
-
 .circle1 {
   top: -23%;
   right: 20%;
 }
-
 .circle2 {
   top: 0%;
   right: -20%;
 }
-
 .circle3 {
   top: -23%;
   left: 20%;
+}
+
+.row-3 {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.row-3-left img {
+  width: 332px;
+  height: 705px;
+}
+.row-3-right {
+  width: 44%;
+}
+.round {
+  width: 86px;
+  height: 86px;
+  border-radius: var(--rounded-radius);
+  background: rgb(255, 104, 104);
 }
