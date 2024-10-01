@@ -20,6 +20,8 @@
 
 
   --radius : 20px;
+  --box-radius: 55px;
+  --rounded-radius: 50%;
 }
 
 * {
