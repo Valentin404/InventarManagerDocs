@@ -16,8 +16,8 @@
   --font-size-big: 32px;
   --font-size-mid: 24px;
   --font-size-text: 20px;
+  --font-size-qr: 80%;
 
-  --font-size-qr: 1.1vw;
 
   --radius : 20px;
 }
@@ -237,5 +237,6 @@ nav .link.active {
     --font-size-very-big: 40px;
     --font-size-mid: 20px;
     --font-size-text: 16px;
+    --font-size-qr: 65%;
   }
 }
