@@ -162,16 +162,39 @@
   flex-direction: row;
   justify-content: space-around;
 }
+.row-3-left {
+  position: relative;
+}
 .row-3-left img {
   width: 332px;
   height: 705px;
 }
+.phone-decor-boll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 160%;
+  height: 77%;
+  z-index: -1;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(73, 26, 26),
+    rgba(73, 26, 26, 0) 100%
+  );
+}
 .row-3-right {
   width: 44%;
+}
+.row-3-text {
+  width: 107%;
+  justify-content: space-between;
 }
 .round {
   width: 86px;
   height: 86px;
   border-radius: var(--rounded-radius);
   background: rgb(255, 104, 104);
+}
+.round img {
+  width: 75%;
 }
