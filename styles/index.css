@@ -170,10 +170,10 @@
 }
 .phone-decor-boll {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 160%;
-  height: 77%;
+  top: 5%;
+  right: -27.5%;
+  width: 180%;
+  height: 82.5%;
   z-index: -1;
   background: radial-gradient(
     50% 50% at 50% 50%,
