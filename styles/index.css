@@ -102,24 +102,26 @@
 }
 
 .row-2 {
+  align-items: normal;
+}
+.row-2-boxes {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .box {
   position: relative;
   justify-content: space-between;
-  padding: 1.7%;
-  padding-bottom: 2.5%;
+  padding: 1.5%;
+  padding-bottom: 2.4%;
   width: 320px;
-  height: 335px;
+  height: 330px;
   border-radius: var(--box-radius);
   background-color: var(--bg-decor);
   border: 0.5px solid var(--bg-decor-border);
 }
 .circle {
-  width: 105px;
-  height: 105px;
+  width: 115px;
+  height: 115px;
   border-radius: var(--rounded-radius);
   background: rgb(255, 251, 158);
 }
@@ -132,6 +134,7 @@
 .box .title {
   font-size: var(--font-size-mid);
   color: var(--color-full-white);
+  margin-bottom: 6.5%;
 }
 .box-decor-boll {
   position: absolute;

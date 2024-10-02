@@ -18,6 +18,7 @@
   --font-size-text: 20px;
   --font-size-qr: 80%;
 
+  --font-weight-light: 400;
 
   --radius : 20px;
   --box-radius: 55px;
@@ -81,6 +82,9 @@
 }
 .mb175 {
   margin-bottom: 175px;
+}
+.mb35 {
+  margin-bottom: 35px;
 }
 .mb25 {
   margin-bottom: 25px;
@@ -236,13 +240,14 @@ nav .link.active {
   color: var(--color-full-white);
   font-family: var(--font-play);
   font-size: var(--font-size-very-big);
+  font-weight: var(--font-weight-light);
 }
 
 .text {
   color: var(--color-full-white);
   font-family: var(--font-play);
   font-size: var(--font-size-text);
-
+  font-weight: var(--font-weight-light);
 }
 
 
