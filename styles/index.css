@@ -273,3 +273,17 @@
   width: 765.72px;
   height: 527px;
 }
+.gradient-decor-boll {
+  position: absolute;
+  width: 1198px;
+  height: 389px;
+  border-radius: 53px;
+  filter: blur(150px);
+  background: linear-gradient(
+    203.43deg,
+    rgb(178, 158, 255) 10.939%,
+    rgb(255, 251, 158) 59.845%
+  );
+  opacity: 0.5;
+  z-index: -1;
+}
