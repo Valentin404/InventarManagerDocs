@@ -172,7 +172,7 @@ nav .link {
 .active-decor {
   transition: all 0.3s;
   position: absolute;
-  top: 0;
+  top: 10%;
   height: 100%;
   width: 160%;
   left: -30%;
@@ -216,7 +216,7 @@ nav .link.active {
 .a-download-c:hover .a-download-dec {
   width: 160%;
   height: 430%;
-  transform: translate(-19%, -36%);
+  transform: translate(-19%, -47%);
 }
 .a-download-dec {
   position: absolute;

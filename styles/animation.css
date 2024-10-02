@@ -1,0 +1,52 @@
+.animationElement {
+    transition: all 1s;
+}
+.animationElement.animationLeft {
+    transform: translateX(-100%); 
+}
+.animationElement.animationBottom {
+    transform: translateY(100%); 
+}
+.animationElement.animationRight {
+    transform: translateX(100%);
+}
+.animationElement.animationRightOpacity {
+    transform: translateX(100%);
+    opacity: 0;
+    filter: blur(10px);
+    /* transition: all 1s; */
+}
+.animationElement.animationLeftOpacity {
+    transform: translateX(-100%);
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.animationElement.anim {
+    transform:  translateX(0) translateY(0) !important;
+    opacity: 1;
+    filter: blur(0px);
+}
+
+/* transition time */
+.transition0_3sStop1 {
+    transition: all .3s ease-in-out 1s;;
+}
+.transition0_6sStop1 {
+    transition: all .6s ease-in-out 1s;;
+}
+.transition0_9sStop1 {
+    transition: all .9s ease-in-out 1s;;
+}
+.transition1_1sStop1 {
+    transition: all 1.1s ease-in-out 1s;;
+}
+.transition1_1s {
+    transition: all 1.1s;
+}
+.transition1_2s {
+    transition: all 1.2s;
+}
+.transition1_3s {
+    transition: all 1.3s;
+}

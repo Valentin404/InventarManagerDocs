@@ -7,6 +7,7 @@
     <title>Inventory manager</title>
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/animation.css">
   </head>
   <body class="center-column">
     <header class="max-1200 row-beetween">
@@ -24,15 +25,15 @@
           <div class="active-decor"></div>
         </div>
         <div class="link-c">
-          <a href="./index.html" class="link">About us</a>
+          <a href="./aboutUs.html" class="link">About us</a>
           <div class="active-decor"></div>
         </div>
         <div class="link-c">
-          <a href="./index.html" class="link">FAQ</a>
+          <a href="./FAQ.html" class="link">FAQ</a>
           <div class="active-decor"></div>
         </div>
         <div class="link-c">
-          <a href="./index.html" class="link">Subscription</a>
+          <a href="./Subscription.html" class="link">Subscription</a>
           <div class="active-decor"></div>
         </div>
       </nav>
@@ -49,7 +50,7 @@
 
     <main class="max-1200 center-column">
       <section class="hero-g">
-        <div class="hero-left left-column">
+        <div class="hero-left left-column animationElement animationLeft ">
           <h1 class="title mb25">Lorem ipsum ipsum dolor sit amet</h1>
           <p class="text mb25">
             Lorem ipsum dolor sit amet consectetur. Mauris mauris et accumsan
@@ -82,17 +83,17 @@
           </div>
         </div>
         <div class="hero-right center">
-          <img src="./images/phone3.png" alt="" class="hero-phone" />
-          <div class="hero-decor hero-decor-1 center-column">
+          <img src="./images/phone3.png" alt="" class="hero-phone animationElement animationRight" />
+          <div class="hero-decor hero-decor-1 center-column animationElement animationRightOpacity transition0_3sStop1">
             <img src="./images/qrPlayMarket.png" alt="" />
             <h2>QR-код сгенеровано!</h2>
             <div class="hero-decor-boll"></div>
           </div>
-          <div class="hero-decor hero-decor-2 center-column">
+          <div class="hero-decor hero-decor-2 center-column animationElement animationLeftOpacity transition0_6sStop1">
             <img src="./images/scan.png" alt="" />
             <div class="hero-decor-boll"></div>
           </div>
-          <div class="hero-decor hero-decor-3 center-column">
+          <div class="hero-decor hero-decor-3 center-column animationElement animationRightOpacity transition0_9sStop1">
             <img src="./images/table.png" alt="" />
             <div class="hero-decor-boll"></div>
           </div>
@@ -103,7 +104,7 @@
         <div class="center">
           <h1 class="title mb35">Lorem ipsum ipsum dolor sit amet</h1>
         </div>
-        <div class="row-beetween gap15">
+        <div class="row-beetween gap15 animationElement animationBottom">
           <div class="box beetween-left-column">
             <div class="circle center-column">
               <img src="./images/vectorDir.png" alt="" />
@@ -145,10 +146,10 @@
 
       <section class="statisctic-g row-3 mb175">
         <div class="row-3-left">
-          <img src="./images/phone1.png" alt="" />
+          <img class="animationElement animationLeft" src="./images/phone1.png" alt="" />
           <div class="phone-decor-boll"></div>
         </div>
-        <div class="row-3-right right-column">
+        <div class="row-3-right right-column animationElement animationRight">
           <h1 class="title mb25">Lorem ipsum ipsum dolor sit amet</h1>
           <p class="text mb25">
             Lorem ipsum dolor sit amet consectetur. Mauris mauris et accumsan
@@ -189,7 +190,7 @@
             amet sed sed arcu.
           </p>
         </div>
-        <div class="row-4-info center">
+        <div class="row-4-info center animationElement animationBottom">
           <div class="info center-column">
             <h2 class="title">
               999
@@ -229,7 +230,7 @@
           <img class="google-play" src="./images/GooglePlay.png" alt="" />
         </div>
         <div class="right-google-phone center">
-          <img class="phone-google-phone" src="./images/phone2.png" alt="" />
+          <img class="phone-google-phone animationElement animationRight" src="./images/phone2.png" alt="" />
         </div>
 
         <div class="gradient-decor-boll"></div>
@@ -247,7 +248,7 @@
           </div>
         </div>
         <div class="footer-left-cont">
-          <h1 class="logoTitle">Inventory</h1>
+          <a href="mailto:manageyourinvent@gmail.com?subject=WebMessage" class="logoTitle">manageyourinvent@gmail.com</a>
           <h1 class="logoTitle">manager</h1>
         </div>
         <div class="a-download-c margin-top">
@@ -265,18 +266,20 @@
           <div class="active-decor"></div>
         </div>
         <div class="link-c">
-          <a href="./index.html" class="link">About us</a>
+          <a href="./aboutUs.html" class="link">About us</a>
           <div class="active-decor"></div>
         </div>
         <div class="link-c">
-          <a href="./index.html" class="link">FAQ</a>
+          <a href="./FAQ.html" class="link">FAQ</a>
           <div class="active-decor"></div>
         </div>
         <div class="link-c">
-          <a href="./index.html" class="link">Subscription</a>
+          <a href="./Subscription.html" class="link">Subscription</a>
           <div class="active-decor"></div>
         </div>
       </nav>
     </footer>
+    
+    <script src="./script/animationStart.js"></script>
   </body>
 </html>
