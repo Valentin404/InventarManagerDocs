@@ -41,6 +41,9 @@
   max-width: 750px;
   width: 96%;
 }
+.w100 {
+  width: 100%;
+}
 /* flex */
 .center-column {
   display: flex;
@@ -53,6 +56,16 @@
   align-items: center;
   justify-content: center;
 }
+.center-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.center-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .beetween-start {
   display: flex;
   align-items: flex-start;
@@ -63,6 +76,12 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+.beetween-left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .right-column {
   display: flex;
@@ -88,6 +107,9 @@
 }
 .mb25 {
   margin-bottom: 25px;
+}
+.gap15 {
+  gap: 15px;
 }
 /* https://play.google.com/store/apps/details?id=com.valik404.inventorymanager */
 
