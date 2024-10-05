@@ -46,7 +46,7 @@
 }
 .decor-red {
   top: 125px;
-  right: -13%;
+  left: 35%;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(73, 26, 26),
