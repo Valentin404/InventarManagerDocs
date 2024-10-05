@@ -10,18 +10,21 @@
 }
 .hero-phone-1 {
   position: absolute;
-  width: 222.5px;
+  max-width: 222.5px;
+  width: 50%;
   z-index: -1;
 }
 .hero-phone-2 {
   position: absolute;
-  width: 250.63px;
+  max-width: 250.63px;
+  width: 50%;
   top: 55px;
-  left: 28%;
+  left: 27.5%;
 }
 .hero-phone-3 {
   position: absolute;
-  width: 258.44px;
+  max-width: 258.44px;
+  width: 50%;
   top: 140px;
   left: 55%;
   z-index: -1;
@@ -43,7 +46,7 @@
 }
 .decor-red {
   top: 125px;
-  right: -20%;
+  right: -13%;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(73, 26, 26),
@@ -51,7 +54,7 @@
   );
 }
 .hero-text {
-  width: 45%;
+  width: 43.3%;
   margin-top: 35px;
   gap: 20px;
 }
