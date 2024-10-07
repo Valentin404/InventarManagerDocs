@@ -90,6 +90,13 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.author:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.author-text {
+  width: 45%;
+  gap: 10px;
+}
 .author-name-job {
   margin-bottom: 30px;
 }
@@ -118,10 +125,6 @@
 }
 .font-color-green {
   color: rgb(104, 255, 183);
-}
-.about-author {
-  width: 45%;
-  gap: 10px;
 }
 .author-list {
   margin-left: 10px;
