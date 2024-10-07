@@ -1,0 +1,100 @@
+.hero-sub {
+  margin: 115px 0;
+}
+.hero-cards-row {
+  position: relative;
+  margin-top: 65px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.hero-card {
+  position: relative;
+  flex: 0 1 26.5%;
+  background: var(--bg-body);
+  border: 0.25px solid var(--bg-decor-border);
+  border-radius: 30px;
+  margin-bottom: 100px;
+  padding: 6.5px 6.5px 8px 6.5px;
+}
+.price {
+  text-align: center;
+}
+.price h1,
+.price h2 {
+  font-family: var(--font-play);
+  font-weight: var(--font-weight-bold);
+}
+.price h1 {
+  font-size: 40px;
+}
+.price h2 {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+.card-content {
+  align-self: flex-start;
+}
+.card-content p {
+  position: relative;
+  color: var(--color-white);
+  font-size: var(--font-size-little);
+  font-family: var(--font-play);
+  padding-left: 15px;
+}
+.card-content p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-full-white);
+  font-size: 16px;
+}
+.card-list-info p {
+  margin: 5px 0;
+}
+.card-line {
+  border: none;
+  border-top: 0.25px solid var(--bg-decor-border);
+  margin: 11px 0;
+  width: calc(100% + 20px);
+  transform: translateX(-10px);
+}
+.card-list-benefits p {
+  color: var(--color-grey);
+}
+.card-list-benefits > .include-benefit {
+  color: var(--color-white);
+}
+
+/* --- Cards decor boll */
+
+.cards-decor-boll-yellow {
+  position: absolute;
+  width: 100%;
+  height: 823px;
+  background: var(--gradient-yellow);
+  z-index: -1;
+}
+
+/* --- Price font color --- */
+
+.font-white {
+  color: var(--color-white);
+}
+.font-green {
+  color: var(--color-green);
+}
+.font-yellow {
+  color: var(--color-yellow);
+}
+.font-blue {
+  color: var(--color-blue);
+}
+.font-ligtly-red {
+  color: var(--color-lightly-red);
+}
+.font-dark-red {
+  color: var(--color-dark-red);
+}
