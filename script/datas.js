@@ -6,7 +6,8 @@ const datas = {
         {
             title: 'Як видалити акаунт',
             answer: [
-                {
+                {   
+                    // conent 
                     teg : 'img',
                     atributes : {src : './images/faq/1/1.jpg'}
                 }
