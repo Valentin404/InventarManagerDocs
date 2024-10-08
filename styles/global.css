@@ -22,7 +22,12 @@
   /* ---------------- */
 
   /* gradient bolls color */
-
+  
+  --gradient-green: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(26, 73, 48),
+    rgba(26, 73, 48, 0) 100%
+  );
   --gradient-yellow: radial-gradient(
     50% 50% at 50% 50%,
     rgb(66, 67, 42),

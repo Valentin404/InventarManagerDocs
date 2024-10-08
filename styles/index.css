@@ -60,11 +60,7 @@
 }
 .hero-decor-1 .hero-decor-boll {
   height: 190%;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(26, 73, 48),
-    rgba(26, 73, 48, 0) 100%
-  );
+  background: var(--gradient-green)
 }
 
 .hero-decor-2 {
@@ -76,11 +72,7 @@
 }
 .hero-decor-2 .hero-decor-boll {
   height: 275%;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(73, 26, 26),
-    rgba(73, 26, 26, 0) 100%
-  );
+  background: var(--gradient-red);
 }
 
 .hero-decor.hero-decor-3 {
@@ -94,11 +86,7 @@
 }
 .hero-decor-3 .hero-decor-boll {
   height: 275%;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(66, 67, 42),
-    rgba(66, 67, 42, 0) 100%
-  );
+  background: var(--gradient-yellow);
 }
 
 /*! document-g  -------------- START ------------- */
