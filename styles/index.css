@@ -40,8 +40,25 @@
 
 .hero-decor-boll {
   position: absolute;
-  width: 160%;
+  width: 50%;
   z-index: -1;
+}
+.green-boll {
+  left: 62%;
+  top: 2%;
+  height: 48%;
+  background: var(--gradient-green);
+}
+.red-boll {
+  right: 45%;
+  height: 50%;
+  background: var(--gradient-red);
+}
+.yellow-boll {
+  top: 60%;
+  right: -14%;
+  height: 55%;
+  background: var(--gradient-yellow);
 }
 
 .hero-decor-1 {
@@ -58,10 +75,6 @@
 .hero-decor-1 img {
   width: 60%;
 }
-.hero-decor-1 .hero-decor-boll {
-  height: 190%;
-  background: var(--gradient-green)
-}
 
 .hero-decor-2 {
   right: 63.5%;
@@ -69,10 +82,6 @@
 }
 .hero-decor-2 img {
   width: 80%;
-}
-.hero-decor-2 .hero-decor-boll {
-  height: 275%;
-  background: var(--gradient-red);
 }
 
 .hero-decor.hero-decor-3 {
@@ -83,10 +92,6 @@
 }
 .hero-decor-3 img {
   width: 115%;
-}
-.hero-decor-3 .hero-decor-boll {
-  height: 275%;
-  background: var(--gradient-yellow);
 }
 
 /*! document-g  -------------- START ------------- */
