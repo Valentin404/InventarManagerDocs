@@ -40,23 +40,25 @@
 
 .hero-decor-boll {
   position: absolute;
-  width: 50%;
   z-index: -1;
 }
 .green-boll {
   left: 62%;
   top: 2%;
+  width: 48%;
   height: 48%;
   background: var(--gradient-green);
 }
 .red-boll {
   right: 45%;
+  width: 50%;
   height: 50%;
   background: var(--gradient-red);
 }
 .yellow-boll {
   top: 60%;
   right: -14%;
+  width: 55%;
   height: 55%;
   background: var(--gradient-yellow);
 }
