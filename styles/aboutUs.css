@@ -150,6 +150,8 @@
   height: 320px;
   border-radius: 100%;
   z-index: 1;
+}
+.author-img-bg-1 {
   background: linear-gradient(
     50deg,
     rgba(178, 158, 255, 1),
