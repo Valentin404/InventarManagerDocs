@@ -320,14 +320,6 @@ nav .link.active {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .icon {
-    display: block;
-  }
- }
-
-/* ----------- */
-
 /* задача поменять классы на нормальные, сделать стили линий такие как на дизайне, мобильная верстка начинается при 800 пиксилей, сделать правильно header and footer */
 
 /* иконка, даю ограничения в размере и прячу ее */
@@ -385,3 +377,80 @@ nav .link.active {
      left: 50%;
  }
 
+ /* ----------- */
+
+ /* Кнопки сменяються на макете в зависимости от экрана одна после лого, а мобильная dawnload в конце */
+
+ .mobile-dawnload-btn {
+  display: none;
+ }
+
+ /* ------------------- */
+
+ @media screen and (max-width: 800px) {
+  .icon {
+    display: block;
+  }
+
+  header .logo img {
+    width: 15%;
+    height: auto;
+  }
+  header .logoTitle {
+    font-size: var(--font-size-big);
+    line-height: 30px;
+  }
+  
+  nav.row-beetween,
+  header nav .link-c,
+  header .a-download-c {
+    display: none;
+  }
+
+  footer.beetween-start {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer .left-column {
+    align-items: center;
+    gap: 15px;
+  }
+
+  footer .logo {
+    justify-content: center;
+  }
+
+  footer .logo img {
+    width: 19%;
+    height: auto;
+  }
+
+  footer .logoTitle {
+    font-size: var(--font-size-very-big);
+    line-height: 45px;
+  }
+
+  .footer-left-cont a,
+  .footer-left-cont h1 {
+    font-size: var(--font-size-big);
+  }
+
+  .left-footer .a-download-c {
+    display: none;
+  }
+
+  footer .link-c {
+    font-size: var(--font-size-big);
+  }
+
+  footer .a-download {
+    font-size: var(--font-size-big);
+  }
+
+  .mobile-dawnload-btn {
+    display: block;
+    margin-top: 30%;
+   }
+ }
