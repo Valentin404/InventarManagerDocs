@@ -10,17 +10,56 @@
   --color-white: rgb(234, 234, 234);
   --color-full-white: rgb(255, 255, 255);
 
+  /* custom text color */
+
+  --color-grey: rgb(144, 144, 144);
+  --color-green: rgb(104, 255, 183);
+  --color-yellow: rgb(255, 251, 158);
+  --color-blue: rgb(178, 158, 255);
+  --color-lightly-red: rgb(255, 104, 104);
+  --color-dark-red: rgb(255, 54, 54);
+
+  /* ---------------- */
+
+  /* gradient bolls color */
+  
+  --gradient-green: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(26, 73, 48),
+    rgba(26, 73, 48, 0) 100%
+  );
+  --gradient-yellow: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(66, 67, 42),
+    rgba(66, 67, 42, 0) 100%
+  );
+  --gradient-blue: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(57, 52, 80),
+    rgba(45, 41, 65, 0) 100%,
+    rgba(57, 52, 80, 0) 100%
+  );
+  --gradient-red: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(73, 26, 26),
+    rgba(73, 26, 26, 0) 100%
+  );
+
+  /* -------------------- */
+
   --font-play: "Play", sans-serif;
 
   --font-size-very-big: 48px;
   --font-size-big: 32px;
   --font-size-mid: 24px;
+  --font-size-little: 14px;
   --font-size-text: 20px;
   --font-size-qr: 80%;
 
   --font-weight-light: 400;
+  --font-weight-bold: 700;
 
-  --radius : 20px;
+  --radius: 20px;
   --box-radius: 55px;
   --rounded-radius: 50%;
 }
@@ -272,9 +311,8 @@ nav .link.active {
   font-weight: var(--font-weight-light);
 }
 
-
-@media screen and (max-width : 1000px) {
-  :root {  
+@media screen and (max-width: 1000px) {
+  :root {
     --font-size-very-big: 40px;
     --font-size-mid: 20px;
     --font-size-text: 16px;
