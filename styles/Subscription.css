@@ -4,18 +4,20 @@
 .hero-cards-row {
   position: relative;
   margin-top: 70px;
-  width: 80%;
+  width: 100%;
+  max-width: 892px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 100px 10px;
 }
 .hero-card {
+    /* flex: 0 1 26.5%; */
   position: relative;
-  flex: 0 1 26.5%;
+  width: 30%;
   background: var(--bg-body);
   border: 0.25px solid var(--bg-decor-border);
   border-radius: 30px;
-  margin-bottom: 100px;
   padding: 6.5px 7.5px 13.5px 7.5px;
 }
 .price {
