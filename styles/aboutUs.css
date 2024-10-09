@@ -153,8 +153,29 @@
 }
 .author-img-bg-1 {
   background: linear-gradient(
-    50deg,
+    25deg,
     rgba(178, 158, 255, 1),
+    rgba(255, 251, 158, 1)
+  );
+}
+.author-img-bg-2 {
+  background: linear-gradient(
+    130deg,
+    rgba(178, 158, 255, 1),
+    rgba(255, 104, 104, 1)
+  );
+}
+.author-img-bg-3 {
+  background: linear-gradient(
+    130deg,
+    rgba(255, 104, 104, 1),
+    rgba(104, 255, 183, 1)
+  );
+}
+.author-img-bg-4 {
+  background: linear-gradient(
+    210deg,
+    rgba(104, 255, 183, 1),
     rgba(255, 251, 158, 1)
   );
 }
