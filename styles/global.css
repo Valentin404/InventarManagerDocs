@@ -449,6 +449,7 @@ nav .link.active {
     font-size: var(--font-size-big);
   }
 
+  /* Класс для появления кнопки на моб устройствах в концу футера находиться */
   .mobile-dawnload-btn {
     display: block;
     margin-top: 30%;
