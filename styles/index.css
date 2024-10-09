@@ -40,8 +40,27 @@
 
 .hero-decor-boll {
   position: absolute;
-  width: 160%;
   z-index: -1;
+}
+.green-boll {
+  left: 62%;
+  top: 2%;
+  width: 48%;
+  height: 48%;
+  background: var(--gradient-green);
+}
+.red-boll {
+  right: 45%;
+  width: 50%;
+  height: 50%;
+  background: var(--gradient-red);
+}
+.yellow-boll {
+  top: 60%;
+  right: -14%;
+  width: 55%;
+  height: 55%;
+  background: var(--gradient-yellow);
 }
 
 .hero-decor-1 {
@@ -58,14 +77,6 @@
 .hero-decor-1 img {
   width: 60%;
 }
-.hero-decor-1 .hero-decor-boll {
-  height: 190%;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(26, 73, 48),
-    rgba(26, 73, 48, 0) 100%
-  );
-}
 
 .hero-decor-2 {
   right: 63.5%;
@@ -73,14 +84,6 @@
 }
 .hero-decor-2 img {
   width: 80%;
-}
-.hero-decor-2 .hero-decor-boll {
-  height: 275%;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(73, 26, 26),
-    rgba(73, 26, 26, 0) 100%
-  );
 }
 
 .hero-decor.hero-decor-3 {
@@ -91,14 +94,6 @@
 }
 .hero-decor-3 img {
   width: 115%;
-}
-.hero-decor-3 .hero-decor-boll {
-  height: 275%;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgb(66, 67, 42),
-    rgba(66, 67, 42, 0) 100%
-  );
 }
 
 /*! document-g  -------------- START ------------- */
