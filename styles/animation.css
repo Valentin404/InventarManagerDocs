@@ -21,6 +21,16 @@
     opacity: 0;
     filter: blur(10px);
 }
+.animationElement.animationLeftOpacityBig {
+    transform: translateX(-150%);
+    opacity: 0;
+    filter: blur(10px);
+}
+.animationElement.animationLeftOpacityVeryBig {
+    transform: translateX(-200%);
+    opacity: 0;
+    filter: blur(10px);
+}
 
 .animationElement.anim {
     transform:  translateX(0) translateY(0) !important;
@@ -49,4 +59,10 @@
 }
 .transition1_3s {
     transition: all 1.3s;
+}
+.transition1_6s {
+    transition: all 1.6s;
+}
+.transition2_6s {
+    transition: all 2.6s;
 }
