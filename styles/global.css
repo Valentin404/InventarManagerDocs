@@ -319,3 +319,69 @@ nav .link.active {
     --font-size-qr: 65%;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .icon {
+    display: block;
+  }
+ }
+
+/* ----------- */
+
+/* задача поменять классы на нормальные, сделать стили линий такие как на дизайне, мобильная верстка начинается при 800 пиксилей, сделать правильно header and footer */
+
+/* иконка, даю ограничения в размере и прячу ее */
+.icon {
+  display: none;
+  width: 45px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* рисую первый центральный спан  */
+.icon span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  left: 0;
+  
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+/* Рисую каждую черточку отдельно   */
+
+.icon span:nth-child(1) {
+  top: 0px;
+ }
+ .icon span:nth-child(2),
+ .icon span:nth-child(3) {
+ top: 13px;
+ }
+ .icon span:nth-child(4) {
+  top: 26px;
+ }
+ 
+ /* Рисую крестик ро клику   */
+ 
+ .menu-open span:nth-child(1) {
+     top: 18px;
+     width: 0%;
+     left: 50%;
+ }
+ .menu-open span:nth-child(2) {
+    transform: rotate(45deg);
+ }
+ .menu-open span:nth-child(3) {
+     transform: rotate(-45deg); 
+ }
+ .menu-open span:nth-child(4) {
+     top: 18px;
+     width: 0%;
+     left: 50%;
+ }
+
