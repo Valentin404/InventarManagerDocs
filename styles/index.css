@@ -336,11 +336,18 @@
     padding: 0;
   }
   .hero-phone {
-    width: 100%;
+    width: 194.24px;
   }
   .hero-decor {
-    width: 55%;
-    height: 15.5%;
+    width: 65%;
+  }
+  .hero-decor-1 {
+    top: 10%;
+    width: 62.5%;
+    height: 22%;
+  }
+  .hero-decor-2 {
+    height: 17%;
   }
   .hero-decor-1 h2 {
     font-size: 9px;
@@ -349,12 +356,25 @@
     width: 100%;
   }
   .hero-decor-boll {
-    display: none;
+   
+  }
+  .green-boll {
+    left: 52%;
+    top: -3%;
+    width: 100%;
+  }
+  .red-boll {
+    right: 50%;
+    width: 100%;
+  }
+  .yellow-boll {
+    top: 60%;
+    right: -54%;
+    width: 100%;
   }
 
   .row-2 {
     text-align: center;
-    display: none;
   }
   .box-decor-boll {
     width: 0%;
