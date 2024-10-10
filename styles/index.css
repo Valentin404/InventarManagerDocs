@@ -400,16 +400,28 @@
   .box p {
     font-size: var(--font-size-mid);
   }
-  .box-decor-boll {
-    width: 0;
-    height: 0;
-  }
   .row-2 h1 {
     font-size: var(--font-size-very-big);
   }
   .row-2 .row-beetween {
     flex-direction: column;
     gap: 85px;
+  }
+  .box-decor-boll {
+    width: 370px;
+    height: 370px;
+  }
+  .circle1 {
+    top: -40%;
+    right: 0;
+  }
+  .circle2 {
+    top: 20%;
+    right: 25%;
+  }
+  .circle3 {
+    top: 25%;
+    left: 0;
   }
 
   .row-3 {
