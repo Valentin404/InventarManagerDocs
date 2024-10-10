@@ -205,6 +205,7 @@
   gap: 25px;
 }
 .round {
+  position: relative;
   width: 86px;
   min-width: 86px;
   height: 86px;
@@ -214,6 +215,17 @@
 }
 .round img {
   width: 75%;
+}
+.round-decor {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(73, 26, 26),
+    rgba(73, 26, 26, 0) 100%
+  );
 }
 /*!  -------------- START ------------- */
 .row-4 {
@@ -338,9 +350,14 @@
     display: initial;
   }
 
+ /* Первая секция */ 
   .hero-g {
+    margin-top: 150px;
     flex-direction: column;
     gap: 75px;
+  }
+  .hero-left {
+    width: 70%;
   }
   .hero-left.left-column {
     text-align: center;
@@ -388,8 +405,19 @@
     width: 100%;
   }
 
+  /* ------------ */
+
+  /* Вторая секция */
+
+  section.row-2 {
+    gap: 20px;
+  }
   .row-2 {
     text-align: center;
+  }
+  .document-g-title {
+    width: 72%;
+    align-self: center;
   }
   .box {
     align-items: center;
@@ -397,12 +425,7 @@
   .box .circle {
     align-self: flex-start;
   }
-  .box p {
-    font-size: var(--font-size-mid);
-  }
-  .row-2 h1 {
-    font-size: var(--font-size-very-big);
-  }
+  
   .row-2 .row-beetween {
     flex-direction: column;
     gap: 85px;
@@ -412,7 +435,7 @@
     height: 370px;
   }
   .circle1 {
-    top: -40%;
+    top: -35%;
     right: 0;
   }
   .circle2 {
@@ -424,16 +447,37 @@
     left: 0;
   }
 
+  /* ---------- */
+
+  /* Третья секция */
+
   .row-3 {
     flex-direction: column-reverse;
     gap: 50px;
+    overflow: hidden;
+  }
+  .phone-decor-boll {
+    top: -15%;
+    right: 0;
+    left: -80%;
+    width: 270%;
+    height: 120%;
   }
   .row-3-left img {
-    width: 194px;
+    width: 100%;
+    max-width: 255px;
   }
   .row-3-right {
     text-align: center;
-    width: 60%;
+    width: 85%;
+    gap: 22.5px;
+  }t
+  .row-3-right h1 {
+    width: 80%;
+    align-self: center;
+  }
+  .row-3-right p {
+    font-size: var(--font-size-mid);
   }
   .row-3-text {
     align-self: center;
@@ -450,9 +494,13 @@
     font-weight: var(--font-weight-bold);
   }
 
+   /* ---------- */
+
+  /* Финальная секция */
+
   .google-phone-c {
-    width: 300px;
-    height: 1000px;
+    width: 70%;
+    height: 950px;
   }
   .google-phone-c.beetween-start {
     text-align: center;
@@ -461,23 +509,33 @@
     justify-content: center;
   }
   .google-phone-c-text {
-    height: 400px;
+    height: 450px;
+    gap: 40px;
   }
   .google-phone-text {
-    width: 264px;
-    max-width: 264px;
+    width: 300px;
+    max-width: 300px;
   }
   .left-google-phone.beetween-left-column {
     align-items: center;
+  }
+  .google-phone-c-text h2 {
+    width: 270px;
+    align-self: center;
   }
   .google-phone-c p {
     font-size: var(--font-size-mid);
   }
   .google-phone-mobile {
-    width: 369.06px;
+    width: 340px;
     margin-bottom: 40px;
+  }
+  .google-play {
+    
   }
   .gradient-decor-boll {
     display: none;
   }
+  
+   /* ---------- */
 }

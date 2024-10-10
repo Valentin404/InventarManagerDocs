@@ -311,14 +311,18 @@ nav .link.active {
   font-weight: var(--font-weight-light);
 }
 
-@media screen and (max-width: 1000px) {
-  :root {
-    --font-size-very-big: 40px;
-    --font-size-mid: 20px;
-    --font-size-text: 16px;
-    --font-size-qr: 65%;
-  }
-}
+/* Закоментил ибо по макету размер шрифта прежний */
+
+/*@media screen and (max-width: 1000px) {*/
+  /*:root {*/
+    /*--font-size-very-big: 40px;*/
+    /*--font-size-mid: 20px;*/
+    /*--font-size-text: 16px;*/
+    /*--font-size-qr: 65%;*/
+  /*}*/
+/*}*/
+
+
 
 /* задача поменять классы на нормальные, сделать стили линий такие как на дизайне, мобильная верстка начинается при 800 пиксилей, сделать правильно header and footer */
 
