@@ -482,6 +482,7 @@
   .row-3-text {
     align-self: center;
     text-align: start;
+    text-wrap: balance;
     justify-content: space-between;
   }
   .row-3-text p {
