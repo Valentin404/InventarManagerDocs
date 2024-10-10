@@ -234,6 +234,7 @@
 }
 .row-4-text {
   text-align: center;
+  margin-bottom: 25px;
 }
 .row-4-text p {
   width: 62%;
@@ -414,6 +415,9 @@
   }
   .row-2 {
     text-align: center;
+    overflow: hidden;
+    padding-bottom: 300px;
+    margin: 0;
   }
   .document-g-title {
     width: 72%;
@@ -431,20 +435,20 @@
     gap: 85px;
   }
   .box-decor-boll {
-    width: 370px;
-    height: 370px;
+    width: 140%;
+    height: 140%;
   }
   .circle1 {
-    top: -35%;
-    right: 0;
+    top: -40%;
+    right: -25%;
   }
   .circle2 {
-    top: 20%;
-    right: 25%;
+    top: -15%;
+    right: -20%;
   }
   .circle3 {
-    top: 25%;
-    left: 0;
+    top: 8%;
+    left: -20%;
   }
 
   /* ---------- */
@@ -453,7 +457,7 @@
 
   .row-3 {
     flex-direction: column-reverse;
-    gap: 50px;
+    gap: 70px;
     overflow: hidden;
   }
   .phone-decor-boll {
@@ -489,9 +493,31 @@
     font-size: var(--font-size-mid);
   }
 
+  /* --------- */
+
+  /* Четвёртая секция */
+  .row-4 {
+    gap: 60px;
+  }
+
   .row-4-info {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+  }
+  .row-4-text {
+    gap: 0;
+  }
+  .row-4-text h2 {
+    width: 70%;
+  }
+  .row-4-text p {
+    width: 70%;
+  }
+  .row-4 .title.mb25 {
+    margin-bottom: 8px;
+  }
+  .info h2,
+  .info p {
     font-weight: var(--font-weight-bold);
   }
 
