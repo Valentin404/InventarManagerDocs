@@ -435,7 +435,7 @@ nav .link.active {
   .footer-left-cont a,
   .footer-left-cont h1 {
     text-align: center;
-    font-size: var(--font-size-big);
+    font-size: var(--font-size-mid);
   }
 
   .left-footer .a-download-c {

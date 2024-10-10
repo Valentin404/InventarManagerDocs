@@ -1,3 +1,9 @@
+/* Убираю элемент флекс контейнера google-phone img */
+
+.mobile-width {
+  display: none;
+}
+
 /*! hero  -------------- START ------------- */
 .hero-g {
   flex-direction: row;
@@ -100,6 +106,7 @@
 
 .row-2 {
   align-items: normal;
+  margin-bottom: 175px;
 }
 
 .box {
@@ -164,6 +171,7 @@
 .row-3 {
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 175px;
 }
 
 .row-3-left {
@@ -210,6 +218,7 @@
 /*!  -------------- START ------------- */
 .row-4 {
   align-items: normal;
+  margin-bottom: 175px;
 }
 .row-4-text {
   text-align: center;
@@ -320,11 +329,19 @@
 }
 
 @media screen and (max-width: 800px) {
+  /* Включение отключение img телефона */
+  /* На мою версии решид использовать флекс эл img, без абсолютного позиционирования */
+  .desktop-width {
+    display: none;
+  }
+  .mobile-width {
+    display: initial;
+  }
+
   .hero-g {
     flex-direction: column;
     gap: 75px;
   }
-
   .hero-left.left-column {
     text-align: center;
     align-items: center;
@@ -336,7 +353,8 @@
     padding: 0;
   }
   .hero-phone {
-    width: 194.24px;
+    max-width: 250px;
+    width: 100%;
   }
   .hero-decor {
     width: 65%;
@@ -354,9 +372,6 @@
   }
   .hero-decor-3 img {
     width: 100%;
-  }
-  .hero-decor-boll {
-   
   }
   .green-boll {
     left: 52%;
@@ -376,9 +391,18 @@
   .row-2 {
     text-align: center;
   }
+  .box {
+    align-items: center;
+  }
+  .box .circle {
+    align-self: flex-start;
+  }
+  .box p {
+    font-size: var(--font-size-mid);
+  }
   .box-decor-boll {
-    width: 0%;
-    height: 0%;
+    width: 0;
+    height: 0;
   }
   .row-2 h1 {
     font-size: var(--font-size-very-big);
@@ -405,7 +429,7 @@
     justify-content: space-between;
   }
   .row-3-text p {
-    font-size: 16px;
+    font-size: var(--font-size-mid);
   }
 
   .row-4-info {
@@ -415,6 +439,25 @@
   }
 
   .google-phone-c {
+    width: 300px;
+    height: 1000px;
+  }
+  .google-phone-c.beetween-start {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .google-phone-c p {
+    font-size: var(--font-size-mid);
+  }
+  .google-phone-mobile {
+    position: relative;
+    right: 38%;
+    width: 369.06px;
+    margin-bottom: 40px;
+  }
+  .gradient-decor-boll {
     display: none;
   }
 }
