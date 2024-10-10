@@ -414,6 +414,7 @@
     gap: 20px;
   }
   .row-2 {
+    width: 110%;
     text-align: center;
     overflow: hidden;
     padding-bottom: 300px;
@@ -435,20 +436,20 @@
     gap: 85px;
   }
   .box-decor-boll {
-    width: 140%;
-    height: 140%;
+    width: 130%;
+    height: 130%;
   }
   .circle1 {
     top: -40%;
-    right: -25%;
+    right: -15%;
   }
   .circle2 {
-    top: -15%;
-    right: -20%;
+    top: -14%;
+    right: -17%;
   }
   .circle3 {
     top: 8%;
-    left: -20%;
+    left: -14%;
   }
 
   /* ---------- */
