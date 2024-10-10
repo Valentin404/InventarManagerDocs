@@ -460,12 +460,20 @@
     align-items: center;
     justify-content: center;
   }
+  .google-phone-c-text {
+    height: 400px;
+  }
+  .google-phone-text {
+    width: 264px;
+    max-width: 264px;
+  }
+  .left-google-phone.beetween-left-column {
+    align-items: center;
+  }
   .google-phone-c p {
     font-size: var(--font-size-mid);
   }
   .google-phone-mobile {
-    position: relative;
-    right: 38%;
     width: 369.06px;
     margin-bottom: 40px;
   }
