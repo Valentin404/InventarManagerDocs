@@ -388,9 +388,9 @@ nav .link.active {
 
 /* Кнопки сменяються на макете в зависимости от экрана одна после лого, а мобильная dawnload в конце */
 
-.mobile-dawnload-btn {
+/* .mobile-dawnload-btn {
   display: none;
-}
+} */
 
 /* ------------------- */
 
@@ -424,6 +424,10 @@ nav .link.active {
     display: none;
   }
 
+  footer {
+    position: relative;
+    padding-bottom: 130px;
+  }
   footer.beetween-start {
     align-items: center;
     justify-content: center;
@@ -456,7 +460,9 @@ nav .link.active {
   }
 
   .left-footer .a-download-c {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    bottom: 0px;
   }
 
   footer .link-c {
@@ -468,10 +474,10 @@ nav .link.active {
   }
 
   /* Класс для появления кнопки на моб устройствах в концу футера находиться */
-  .mobile-dawnload-btn {
+  /* .mobile-dawnload-btn {
     display: block;
     margin-top: 30%;
-  }
+  } */
 }
 
 
