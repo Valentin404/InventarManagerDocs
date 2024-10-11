@@ -1,9 +1,5 @@
 /* Убираю элемент флекс контейнера google-phone img */
 
-.mobile-width {
-  display: none;
-}
-
 /*! hero  -------------- START ------------- */
 .hero-g {
   flex-direction: row;
@@ -305,7 +301,6 @@
 
 .google-play {
   width: 214px;
-  height: 72px;
 }
 .right-google-phone {
   width: 28%;
@@ -343,247 +338,112 @@
 }
 
 @media screen and (max-width: 800px) {
-  /* Включение отключение img телефона */
-  /* На мою версии решид использовать флекс эл img, без абсолютного позиционирования */
-  .desktop-width {
-    display: none;
-  }
-  .mobile-width {
-    display: initial;
-  }
-
- /* Первая секция */ 
   .hero-g {
-    margin-top: 150px;
     flex-direction: column;
-    gap: 75px;
+    gap: 70px;
+    margin-bottom: 100px;
   }
-  .hero-left {
-    width: 85%;
-  }
-  .hero-left.left-column {
-    text-align: center;
-    align-items: center;
-  }
-  .hero-left .title {
-    font-size: var(--font-size-very-big);
-  }
-  .hero-list-c {
-    padding: 0;
-  }
-  .hero-phone {
-    max-width: 100%;
+  .hero-left,
+  .hero-right {
     width: 100%;
   }
-  .hero-decor {
-    width: 62%;
-  }
-  .hero-decor-1 {
-    top: 10%;
-    width: 65%;
-    height: 26%;
-  }
-  .hero-decor-1 img {
-    width: 65%;
-  }
-  .hero-decor-2 {
-    height: 17%;
-  }
-  .hero-decor-2 img {
-    width: 80%;
-  }
-  .hero-decor-1 h2 {
-    font-size: 9px;
-  }
-  .hero-decor-3 img {
-    width: 100%;
-  }
-  .green-boll {
-    left: 52%;
-    top: -3%;
-    width: 70%;
-    height: 50%;
-  }
-  .red-boll {
-    right: 50%;
-    width: 70%;
-    height: 50%;
-  }
-  .yellow-boll {
-    top: 60%;
-    right: -20%;
-    width: 70%;
-    height: 50%;
+
+  .document-c {
+    flex-direction: column;
+    gap: 60px;
   }
 
-  /* ------------ */
-
-  /* Вторая секция */
-
-  section.row-2 {
-    gap: 20px;
-  }
-  .row-2 {
-    width: 110%;
-    text-align: center;
-    overflow: hidden;
-    padding-bottom: 200px;
-    margin: 0;
-  }
-  .document-g-title {
-    width: 80%;
-    align-self: center;
-  }
   .box {
-    width: 250px;
-    align-items: center;
-  }
-
-  .box .circle {
-    width: 84.33px;
-    height: 83.33px;
-    align-self: flex-start;
-  }
-  .box p {
-    font-size: 16px;
-  }
-  
-  .row-2 .row-beetween {
-    flex-direction: column;
-    gap: 85px;
-  }
-  .box-decor-boll {
-    width: 130%;
-    height: 130%;
+    width: calc(100% - 40px);
   }
   .circle1 {
     top: -40%;
-    right: -15%;
+    right: -20%;
   }
   .circle2 {
-    top: -14%;
-    right: -17%;
+    top: -20%;
+    right: -20%;
   }
   .circle3 {
-    top: 8%;
-    left: -14%;
+    top: 17%;
+    left: -20%;
   }
 
-  /* ---------- */
-
-  /* Третья секция */
-
-  .row-3 {
-    flex-direction: column-reverse;
-    gap: 50px;
-    overflow: hidden;
-    padding-bottom: 100px;
-    margin-bottom: 60px;
-  }
-  .phone-decor-boll {
-    top: -15%;
-    right: 0;
-    left: -80%;
-    width: 270%;
-    height: 135%;
-  }
-  .row-3-left img {
-    width: 100%;
-    max-width: 195px;
+  .row-2 {
+    margin-bottom: 150px;
   }
   .row-3-right {
-    text-align: center;
-    width: 85%;
-    gap: 22.5px;
-  }t
-  .row-3-right h1 {
-    width: 80%;
-    align-self: center;
+    width: 100%;
   }
-  .row-3-right p {
-    font-size: var(--font-size-mid);
+  .statisctic-g {
+    flex-direction: column-reverse;
+    gap: 50px;
+    margin-bottom: 150px;
   }
-  .row-3-text {
-    align-self: center;
-    text-align: start;
-    text-wrap: balance;
-    justify-content: space-between;
-  }
-  .row-3-text p {
-    font-size: var(--font-size-mid);
-  }
-
-  /* --------- */
-
-  /* Четвёртая секция */
-  .row-4 {
-    gap: 60px;
-    margin-bottom: 100px;
-  }
-
-  .row-4-info {
-    flex-direction: column;
-    gap: 40px;
-  }
-  .row-4-text {
-    gap: 0;
-  }
-  .row-4-text h2 {
-    width: 85%;
-  }
-  .row-4-text p {
-    width: 70%;
-  }
-  .row-4 .title.mb25 {
-    margin-bottom: 8px;
-  }
-  .info h2,
-  .info p {
-    font-weight: var(--font-weight-bold);
-  }
-
-   /* ---------- */
-
-  /* Финальная секция */
-
-  .google-phone-c {
-    width: 65%;
-    height: 920px;
-  }
-  .google-phone-c.beetween-start {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
+  .row-3-left {
+    display: flex;
     justify-content: center;
   }
+  .row-3-left img {
+    width: 80%;
+    max-width: 330px;
+  }
+
+  .row-4 {
+    gap: 64px;
+    margin-bottom: 150px;
+  }
+  .row-4-text {
+    margin-bottom: 0;
+  }
+  .row-4-text p {
+    width: 100%;
+  }
+  .row-4-info {
+    flex-direction: column;
+    margin-top: 0;
+    gap: 50px;
+  }
+  .row-4-info .info p {
+    width: 100%;
+    max-width: 270px;
+  }
+
+  .google-phone-c {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 18px 172px 18px;
+    width: calc(100% - 32px);
+    position: relative;
+  }
   .google-phone-c-text {
-    height: 450px;
-    gap: 40px;
+    height: auto;
+    gap: 50px;
+  }
+  .left-google-phone {
+    width: 100%;
+    height: auto;
+    text-align: center;
   }
   .google-phone-text {
-    width: 270px;
-    max-width: 300px;
+    max-width: none;
   }
-  .left-google-phone.beetween-left-column {
-    align-items: center;
+  .right-google-phone {
+    width: 100%;
+    margin-top: 8px;
   }
-  .google-phone-c-text h2 {
-    width: 270px;
-    align-self: center;
+
+  .phone-google-phone {
+    position: static;
+    width: 94%;
+    max-width: 320px;
+    min-width: 0;
   }
-  .google-phone-c p {
-    font-size: var(--font-size-mid);
-  }
-  .google-phone-mobile {
-    width: 280px;
-    margin-bottom: 40px;
-  }
+
+
   .google-play {
-    
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 107px);
   }
-  .gradient-decor-boll {
-    display: none;
-  }
-  
-   /* ---------- */
 }
