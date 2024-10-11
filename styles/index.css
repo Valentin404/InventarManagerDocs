@@ -435,14 +435,17 @@
     align-self: center;
   }
   .box {
+    width: 250px;
     align-items: center;
   }
 
   .box .circle {
+    width: 84.33px;
+    height: 83.33px;
     align-self: flex-start;
   }
-  .circle {
-    
+  .box p {
+    font-size: 16px;
   }
   
   .row-2 .row-beetween {
@@ -545,7 +548,7 @@
 
   .google-phone-c {
     width: 65%;
-    height: 900px;
+    height: 920px;
   }
   .google-phone-c.beetween-start {
     text-align: center;
