@@ -22,7 +22,7 @@
   /* ---------------- */
 
   /* gradient bolls color */
-  
+
   --gradient-green: radial-gradient(
     50% 50% at 50% 50%,
     rgb(26, 73, 48),
@@ -320,14 +320,6 @@ nav .link.active {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .icon {
-    display: block;
-  }
- }
-
-/* ----------- */
-
 /* задача поменять классы на нормальные, сделать стили линий такие как на дизайне, мобильная верстка начинается при 800 пиксилей, сделать правильно header and footer */
 
 /* иконка, даю ограничения в размере и прячу ее */
@@ -348,40 +340,127 @@ nav .link.active {
   background: white;
   border-radius: 9px;
   left: 0;
-  
+
   transform: rotate(0deg);
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 /* Рисую каждую черточку отдельно   */
 
 .icon span:nth-child(1) {
   top: 0px;
- }
- .icon span:nth-child(2),
- .icon span:nth-child(3) {
- top: 13px;
- }
- .icon span:nth-child(4) {
+}
+.icon span:nth-child(2),
+.icon span:nth-child(3) {
+  top: 13px;
+}
+.icon span:nth-child(4) {
   top: 26px;
- }
- 
- /* Рисую крестик ро клику   */
- 
- .menu-open span:nth-child(1) {
-     top: 18px;
-     width: 0%;
-     left: 50%;
- }
- .menu-open span:nth-child(2) {
-    transform: rotate(45deg);
- }
- .menu-open span:nth-child(3) {
-     transform: rotate(-45deg); 
- }
- .menu-open span:nth-child(4) {
-     top: 18px;
-     width: 0%;
-     left: 50%;
- }
+}
 
+/* Рисую крестик ро клику   */
+
+.menu-open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.menu-open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.menu-open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.menu-open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* ----------- */
+
+/* Кнопки сменяються на макете в зависимости от экрана одна после лого, а мобильная dawnload в конце */
+
+.mobile-dawnload-btn {
+  display: none;
+}
+
+/* ------------------- */
+
+@media screen and (max-width: 800px) {
+  :root {
+    --font-size-very-big: 48px;
+    --font-size-big: 32px;
+    --font-size-mid: 24px;
+    --font-size-little: 14px;
+    --font-size-text: 20px;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  header .logo img {
+    width: 12%;
+    height: auto;
+  }
+  header .logoTitle {
+    font-size: 18.54px;
+    line-height: 22px;
+  }
+
+  nav.row-beetween,
+  header nav .link-c,
+  header .a-download-c {
+    display: none;
+  }
+
+  footer.beetween-start {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer .left-column {
+    align-items: center;
+    gap: 15px;
+  }
+
+  footer .logo {
+    justify-content: center;
+  }
+
+  footer .logo img {
+    width: 19%;
+    height: auto;
+  }
+
+  footer .logoTitle {
+    font-size: var(--font-size-very-big);
+    line-height: 45px;
+  }
+
+  .footer-left-cont a,
+  .footer-left-cont h1 {
+    text-align: center;
+    font-size: var(--font-size-mid);
+  }
+
+  .left-footer .a-download-c {
+    display: none;
+  }
+
+  footer .link-c {
+    font-size: var(--font-size-big);
+  }
+
+  footer .a-download {
+    font-size: var(--font-size-big);
+  }
+
+  /* Класс для появления кнопки на моб устройствах в концу футера находиться */
+  .mobile-dawnload-btn {
+    display: block;
+    margin-top: 30%;
+  }
+}
