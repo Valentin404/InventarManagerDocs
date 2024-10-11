@@ -112,7 +112,6 @@
   padding-bottom: 44px;
   max-width: 320px;
   width: 100%;
-  /* min-height: 330px; */
   border-radius: var(--box-radius);
   background-color: var(--bg-decor);
   border: 0.5px solid var(--bg-decor-border);
@@ -440,7 +439,6 @@
     max-width: 320px;
     min-width: 0;
   }
-
 
   .google-play {
     position: absolute;

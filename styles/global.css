@@ -150,8 +150,6 @@
 .gap15 {
   gap: 15px;
 }
-/* https://play.google.com/store/apps/details?id=com.valik404.inventorymanager */
-
 body {
   background-color: var(--bg-body);
   overflow-x: hidden;
@@ -315,18 +313,7 @@ nav .link.active {
   font-weight: var(--font-weight-light);
 }
 
-@media screen and (max-width: 1000px) {
-  :root {
-    --font-size-very-big: 40px;
-    --font-size-mid: 20px;
-    --font-size-text: 16px;
-    --font-size-qr: 65%;
-  }
-}
-
-/* задача поменять классы на нормальные, сделать стили линий такие как на дизайне, мобильная верстка начинается при 800 пиксилей, сделать правильно header and footer */
-
-/* иконка, даю ограничения в размере и прячу ее */
+/* header burger menu */
 .icon {
   display: none;
   width: 45px;
@@ -336,7 +323,6 @@ nav .link.active {
   min-width: 45px;
 }
 
-/* рисую первый центральный спан  */
 .icon span {
   display: block;
   position: absolute;
@@ -350,7 +336,6 @@ nav .link.active {
   transition: 0.25s ease-in-out;
 }
 
-/* Рисую каждую черточку отдельно   */
 
 .icon span:nth-child(1) {
   top: 0px;
@@ -362,8 +347,6 @@ nav .link.active {
 .icon span:nth-child(4) {
   top: 26px;
 }
-
-/* Рисую крестик ро клику   */
 
 .menu-open span:nth-child(1) {
   top: 18px;
@@ -382,15 +365,17 @@ nav .link.active {
   left: 50%;
 }
 
+@media screen and (max-width: 1000px) {
+  :root {
+    --font-size-very-big: 40px;
+    --font-size-mid: 20px;
+    --font-size-text: 16px;
+    --font-size-qr: 65%;
+  }
+}
+
+
 /* ----------- */
-
-/* Кнопки сменяються на макете в зависимости от экрана одна после лого, а мобильная dawnload в конце */
-
-/* .mobile-dawnload-btn {
-  display: none;
-} */
-
-/* ------------------- */
 
 @media screen and (max-width: 800px) {
   :root {
@@ -458,7 +443,6 @@ nav .link.active {
   }
 
   .left-footer .a-download-c {
-    /* display: none; */
     position: absolute;
     bottom: 0px;
   }
@@ -470,18 +454,11 @@ nav .link.active {
   footer .a-download {
     font-size: var(--font-size-big);
   }
-
-  /* Класс для появления кнопки на моб устройствах в концу футера находиться */
-  /* .mobile-dawnload-btn {
-    display: block;
-    margin-top: 30%;
-  } */
 }
 
 
 @media screen and (max-width: 540px) {
   :root {
-    /* --font-size-qr: 0.75em; */
     --font-size-qr: 2.4vw;
   }
 }
