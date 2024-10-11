@@ -150,8 +150,13 @@
 .gap15 {
   gap: 15px;
 }
+
+html {
+  overflow-x: hidden;
+}
 body {
   background-color: var(--bg-body);
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -284,6 +289,9 @@ nav .link.active {
 }
 
 /* footer */
+footer {
+  padding-bottom: 50px;
+}
 
 .footer-left-cont {
   margin: 25px 0 50px 0;
@@ -409,7 +417,7 @@ nav .link.active {
 
   footer {
     position: relative;
-    padding-bottom: 130px;
+    padding-bottom: 200px;
   }
   footer.beetween-start {
     align-items: center;
@@ -444,7 +452,7 @@ nav .link.active {
 
   .left-footer .a-download-c {
     position: absolute;
-    bottom: 0px;
+    bottom: 80px;
   }
 
   footer .link-c {

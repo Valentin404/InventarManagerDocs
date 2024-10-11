@@ -1,6 +1,9 @@
 * {
-  overflow-x: hidden !important;
+  /* overflow: hidden !important; */
 }
+/* html, body {
+  overflow-y: auto !important;
+} */
 /*! hero  -------------- START ------------- */
 .hero-g {
   flex-direction: row;
