@@ -108,6 +108,9 @@
   align-items: normal;
   margin-bottom: 175px;
 }
+.box-c {
+  display: flex;
+}
 
 .box {
   position: relative;

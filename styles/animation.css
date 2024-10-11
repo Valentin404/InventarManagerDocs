@@ -14,7 +14,11 @@
     transform: translateX(100%);
     opacity: 0;
     filter: blur(10px);
-    /* transition: all 1s; */
+}
+.animationElement.animationRightOpacityBig {
+    transform: translateX(150%);
+    opacity: 0;
+    filter: blur(10px);
 }
 .animationElement.animationLeftOpacity {
     transform: translateX(-100%);
@@ -32,11 +36,7 @@
     filter: blur(10px);
 }
 
-.animationElement.anim {
-    transform:  translateX(0) translateY(0) !important;
-    opacity: 1;
-    filter: blur(0px);
-}
+
 
 /* transition time */
 .transition0_3sStop1 {
@@ -65,4 +65,42 @@
 }
 .transition2_6s {
     transition: all 2.6s;
+}
+
+
+
+
+
+.animationCloseMobile {
+    transform:  translateX(0) translateY(0) !important;
+    opacity: 1;
+    filter: blur(0px);   
+}
+
+
+@media screen and (max-width: 800px) {
+    .animationElement.animationLeftOpacityBigMobile {
+        transform: translateX(-150%);
+        opacity: 0;
+        filter: blur(10px);
+    }
+    .animationElement.animationRightOpacityBigMobile {
+        transform: translateX(100%);
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+
+
+
+
+
+
+
+
+
+.animationElement.anim {
+    transform:  translateX(0) translateY(0) !important;
+    opacity: 1 !important;
+    filter: blur(0px) !important;
 }

@@ -201,9 +201,8 @@ nav {
 nav .link {
   color: var(--color-white);
   font-family: var(--font-play);
-  font-size: 24px;
+  font-size: var(--font-size-mid);
   font-weight: 400;
-  line-height: 28px;
   letter-spacing: -0.49px;
   transform: all 0.3s;
 }
@@ -380,6 +379,9 @@ footer {
     --font-size-text: 16px;
     --font-size-qr: 65%;
   }
+  /* header .link-c {
+    font-size: var(--font-size-mid);
+  }  */
 }
 
 
