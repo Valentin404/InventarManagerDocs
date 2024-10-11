@@ -67,18 +67,17 @@
     transition: all 2.6s;
 }
 
-
-
-
-
-.animationCloseMobile {
-    transform:  translateX(0) translateY(0) !important;
+/* .animationOnlyMobile {
+    transform:  translateX(0) translateY(0);
     opacity: 1;
-    filter: blur(0px);   
-}
-
-
+    filter: blur(0px);  
+} */
 @media screen and (max-width: 800px) {
+    .animationCloseMobile {
+        transform:  translateX(0) translateY(0) !important;
+        opacity: 1;
+        filter: blur(0px);   
+    }
     .animationElement.animationLeftOpacityBigMobile {
         transform: translateX(-150%);
         opacity: 0;
