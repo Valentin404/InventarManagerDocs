@@ -116,10 +116,13 @@
 
 /* Ограничение ширины текста в карточке */
 .cards-container p {
+  flex-grow: 1;
   width: 85%;
 }
 /* Кнопка для карточки */
 .btn {
+  margin-top: auto;
+  margin-bottom: 30px;
   padding: 5% 10%;
   font-size: var(--font-size-text);
   color: var(--color-yellow);
@@ -133,6 +136,12 @@
 @media screen and (max-width: 1000px) {
   .questions-category {
     gap: 15px;
+  }
+  .ask-card {
+    height: 190px;
+  }
+  .btn {
+    margin-bottom: 15px;
   }
   .hero-faq-right h2 {
     font-size: 30px;

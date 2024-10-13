@@ -78,6 +78,7 @@ function searchedQuestions(el) {
   readMoreBtn.textContent = "Read more";
   readMoreBtn.classList.add("btn");
   const ask = document.createElement("p");
+  ask.classList.add('center');
   ask.classList.add("text");
   ask.textContent = el.title;
   container.append(ask);
