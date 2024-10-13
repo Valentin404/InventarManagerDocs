@@ -48,7 +48,18 @@
     </header>
 
     <main class="max-1200 center-column">
-  
+      <section class="hero-faq">
+        <div class="hero-faq-left left-column">
+          <input id="searchInput" class="search-input" type="text" placeholder="search...." />
+          <div id="questionsCategory" class="questions-category left-column">
+
+          </div>
+        </div>
+        <div class="hero-faq-right center-column" id="rightSection">
+          <h2 id="questionTitle" class="title">Оберіть категорію питання</h2>
+          <div class="cards-container right-column" id="answersStack"></div>
+        </div>
+      </section>
     </main>
 
     <footer class="max-750 beetween-start">
@@ -92,5 +103,7 @@
         </div>
       </nav>
     </footer>
+    <script src="/script/datas.js"></script>
+    <script src="/script/faq.js"></script>
   </body>
 </html>
