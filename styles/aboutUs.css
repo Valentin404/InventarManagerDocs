@@ -45,6 +45,11 @@
   left: 35%;
   background: var(--gradient-red);
 }
+/* Тень видна только нв моб версии */
+.decor-blue {
+  display: none;
+}
+/* ------------------------------- */
 .hero-text {
   width: 43.3%;
   margin-top: 35px;
@@ -200,8 +205,88 @@
   background: var(--gradient-green);
 }
 
+.mobile-btn {
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
   .hero-us {
     margin-bottom: 335px;
+  }
+}
+
+/* Мобильная адаптация */
+
+@media screen and (max-width: 800px) {
+  .hero-us {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 75px;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .hero-phones {
+    width: 90%;
+  }
+  .hero-phone-2 {
+    top: 100px;
+    left: 27.5%;
+  }
+  .hero-phone-3 {
+    top: 215px;
+    left: 55%;
+  }
+  /* Тени декора телефонов */
+  .hero-phones-decor {
+    width: 227.8px;
+    height: 227.8px;
+  }
+  .decor-yellow {
+    top: -25px;
+    left: 10px;
+  }
+  .decor-red {
+    width: 322px;
+    height: 322px;
+    top: 100px;
+    left: -10%;
+  }
+  /* Деполнительная синяя тень появляющеяся на моб.версии */
+  .decor-blue {
+    display: initial;
+    width: 276.26px;
+    height: 276.26px;
+    top: 225px;;
+    left: 15%;
+    background: var(--gradient-blue);
+  }
+
+  /* Секция с авторами */
+  
+  .authors-section {
+    margin-top: 90%;
+  }
+  .author {
+    flex-direction: column-reverse;
+    gap: 75px;
+  }
+  .author:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .author-img img {
+    width: 244px;
+  }
+  .author-img-bg {
+    width: 265px;
+    height: 265px;
+  }
+  .author-text {
+    width: 100%;
+  }
+  .mobile-btn {
+    display: block;
   }
 }

@@ -118,3 +118,33 @@
 .font-dark-red {
   color: var(--color-dark-red);
 }
+
+/* Мобильная адаптация */
+
+@media screen and (max-width: 800px) {
+  .hero-cards-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+  }
+  .hero-card {
+    width: 264px;
+  }
+  .hero-card:nth-child(3n) {
+    margin-bottom: 65px;
+  }
+  .card-decor-boll {
+    width: 1197px;
+    height: 2400px;
+  }
+  .boll-yellow {
+    top: 5%;
+  }
+  .boll-blue {
+    top: 33%;
+  }
+  .boll-red {
+    top: 66%;
+  }
+}
