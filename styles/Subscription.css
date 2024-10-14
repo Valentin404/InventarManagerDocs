@@ -136,15 +136,17 @@
   }
   .card-decor-boll {
     width: 1197px;
-    height: 1250px;
   }
   .boll-yellow {
-    top: 20%;
+    top: 10%;
+    height: 2700px;
   }
   .boll-blue {
-    top: 52%;
+    top: 50%;
+    height: 1250px;
   }
   .boll-red {
-    top: 77%;
+    top: 73%;
+    height: 2000px;
   }
 }
