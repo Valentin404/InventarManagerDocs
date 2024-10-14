@@ -295,8 +295,8 @@
     position: absolute;
     width: 600px;
     height: 600px;
-    top: -67%;
-    left: -67%;
+    top: -75%;
+    left: -70%;
     z-index: -1;
   }
   /* Кнопка видна по макету только на моб.версии */
