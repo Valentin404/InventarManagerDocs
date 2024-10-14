@@ -262,7 +262,7 @@ const datas = {
 
 
 
-const lang = datas['uk']['docs'];
+// const lang = datas['uk']['docs'];
 
 
 

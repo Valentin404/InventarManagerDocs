@@ -1,88 +1,93 @@
-//Вытаскиваю категории вопросов обьект types
+(function(){
 const types = datas.types;
 
+const questionsCategory = document.querySelector('#questionsCategory')
+const answersStack = document.querySelector('#answersStack')
+const questionTitle = document.querySelector('#questionTitle')
+const searchInput = document.querySelector('#searchInput')
 
-//Пробегаюсь по обьекту types
+
+function removeLastActive() {
+  const lastActive = document.querySelector('.text.active-press')
+  lastActive?.classList.remove('active-press')
+}
+
+function searchedQuestions(el) {
+  const container = document.createElement("div");
+  const readMoreBtn = document.createElement("a");
+  const ask = document.createElement("p");
+
+  container.classList.add("ask-card");
+  container.classList.add("center-column");
+
+  readMoreBtn.classList.add("btn");
+  ask.classList.add('center');
+  ask.classList.add("text");
+
+  readMoreBtn.textContent = "Read more";
+
+  readMoreBtn.href = location.hostname.includes('127')
+    ? location.origin + '/FAQcurrent.html?qwestion=' + el._id
+    : 'https://valentin404.github.io/InventarManagerDocs/FAQcurrent.html?qwestion=' + el._id // for reliz
+  ask.textContent = el.title;
+
+  container.append(ask);
+  container.append(readMoreBtn);
+  answersStack.appendChild(container);
+}
+
 Object.keys(types).forEach((type) => {
-  //Создаю тег для категории вопроса
   const question = document.createElement("span");
-  //Достаю текст для категории вопроса
   question.textContent = types[type];
-  //Добавляю класс тегу
   question.classList.add("text");
-  //Добавляю категорию вопроса в теге span в html левую колонку секции c id "questionsCategory"
   questionsCategory.appendChild(question);
-  //Обрабатываю нажатие на категорию вопрос
+  question.slot = type;
+
+
   question.onclick = () => {
-    //Удаляю цвет после нажатия. С другой категории вопроса
-    document
-      .querySelectorAll("span")
-      .forEach((el) => el.classList.remove("active-press"));
-    //Добавляю жёлтый цвет нажатия
+    removeLastActive()
     question.classList.add("active-press");
-    //Очищаю контейнер правой колонки с ответами(вопросами категории)
     answersStack.innerHTML = "";
-    //Добавляю на заголовок название категории id элемента questionTitle
     questionTitle.textContent = question.textContent;
-    //Прохожусь фильтром и отбираю вопросы по категории и всиавляю в html
+
     datas.docs
       .filter((el) => el.type === type)
-      .forEach((el) => {
-        searchedQuestions(el);
-      });
+      .forEach(searchedQuestions);
   };
+
+
 });
 
-//При расфокусе вопроса(клик вне него)
-//Убираю выделение категории вопроса
-//Так-же при blur элемента
-document.addEventListener("click", (e) => {
-  //Проверяю был ли клик на вопрос в левой колонке
-  const isClickQuestion = e.target.closest(".text");
-  //Проверяю бы ли клик по кнопке
-  const isClickBtn = e.target.closest(".btn");
-  //Если клик вне вопроса, убираю выделение
-  if (!isClickQuestion && !isClickBtn) {
-    document
-      .querySelectorAll("span")
-      .forEach((el) => el.classList.remove("active-press"));
-    //Очищаю контент блока с карточками вопросов(ответы)
-    answersStack.innerHTML = "";
-    //Возваращаю дефолтный текст заголовка
-    questionTitle.textContent = "Оберіть категорію питання";
-  }
-});
+// questionsCategory.addEventListener("click", (e) => {
+//   const slot = e.target.slot;
+//   if(!slot) return;
+//   const isClickQuestion = e.target.closest(".text");
+//   const isClickBtn = e.target.closest(".btn");
+//   console.log(isClickQuestion)
+//   console.log(isClickBtn, 'isClickBtn')
+//   if (!isClickQuestion && !isClickBtn) {
+//     document
+//       .querySelectorAll("span")
+//       .forEach((el) => el.classList.remove("active-press"));
+//     answersStack.innerHTML = "";
+//     questionTitle.textContent = "Оберіть категорію питання";
+//   }
+// });
 
-//Логика для поиска вопросов с помощью input
 searchInput.addEventListener("input", () => {
   answersStack.innerHTML = "";
   if (searchInput.value.trim()) {
+    removeLastActive()
     datas.docs
       .filter((el) => {
         const regex = new RegExp(searchInput.value, "gi");
         return el.title.match(regex);
       })
-      .forEach((el) => {
-       searchedQuestions(el)
-      });
+      .forEach(searchedQuestions);
+
+    questionTitle.textContent = 'Текст для ручного поиска';
   }
 });
 
-//Фукция для фильтрации вопросов(карточек)
-function searchedQuestions(el) {
-  //Создаю карточку для вопроса из массива
-  const container = document.createElement("div");
-  container.classList.add("ask-card");
-  container.classList.add("center-column");
-  const readMoreBtn = document.createElement("button");
-  readMoreBtn.textContent = "Read more";
-  readMoreBtn.classList.add("btn");
-  const ask = document.createElement("p");
-  ask.classList.add('center');
-  ask.classList.add("text");
-  ask.textContent = el.title;
-  container.append(ask);
-  container.append(readMoreBtn);
-  //Добавляю в html ответы(карточки с вопросами)
-  answersStack.appendChild(container);
-}
+
+})();
