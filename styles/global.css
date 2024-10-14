@@ -110,6 +110,11 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.evenly-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .left-column {
   display: flex;
   flex-direction: column;

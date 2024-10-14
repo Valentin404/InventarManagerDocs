@@ -12,9 +12,25 @@ const datas = {
                             teg : 'img',
                             atributes : {src : './images/faq/1/1.jpg'},
                             className : "photo-left"
+                        },
+                        {
+                            teg : 'img',
+                            atributes : {src : './images/faq/1/1.jpg'},
+                            className : "photo-left"
+                        },
+                    ],
+                    className : 'cont cont-2' 
+                },
+                {   
+                    conent : [
+                        {
+                            teg : 'img',
+                            atributes : {src : './images/faq/1/1.jpg'},
+                            className : "photo-mid"
                         }
                     ],
-                    className : 'cont-2' 
+                    className : 'cont center',
+                    classNameCont : 'center' 
                 }
             ],
             type: 'account',
