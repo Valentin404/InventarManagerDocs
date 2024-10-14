@@ -10,9 +10,11 @@ const datas = {
                     conent : [
                         {
                             teg : 'img',
-                            atributes : {src : './images/faq/1/1.jpg'}
+                            atributes : {src : './images/faq/1/1.jpg'},
+                            className : "photo-left"
                         }
-                    ]
+                    ],
+                    className : 'cont-2' 
                 }
             ],
             type: 'account',
