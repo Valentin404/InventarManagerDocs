@@ -279,6 +279,7 @@
   .author:nth-child(even) {
     flex-direction: column-reverse;
   }
+  /* Подгоняю img и обводку под макетные данные */
   .author-img img {
     width: 244px;
   }
@@ -289,6 +290,16 @@
   .author-text {
     width: 100%;
   }
+  /* Центрирую тень иконки автора */
+  .author-decor {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: -67%;
+    left: -67%;
+    z-index: -1;
+  }
+  /* Кнопка видна по макету только на моб.версии */
   .mobile-btn {
     display: block;
   }
