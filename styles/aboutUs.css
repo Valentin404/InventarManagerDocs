@@ -94,6 +94,9 @@
   width: 45%;
   gap: 10px;
 }
+.author-text p {
+  text-align: center;
+}
 .author-name-job {
   margin-bottom: 30px;
 }
@@ -223,10 +226,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    gap: 75px;
+    gap: 50px;
   }
   .hero-text {
     width: 100%;
+    align-items: center;
+    text-align: center;
   }
   .hero-phones {
     width: 90%;
@@ -259,13 +264,13 @@
     display: initial;
     width: 276.26px;
     height: 276.26px;
-    top: 225px;;
+    top: 225px;
     left: 15%;
     background: var(--gradient-blue);
   }
 
   /* Секция с авторами */
-  
+
   .authors-section {
     margin-top: 90%;
   }
@@ -279,6 +284,18 @@
   .author:nth-child(even) {
     flex-direction: column-reverse;
   }
+  .author-text {
+    width: 100%;
+  }
+  .author-name-job {
+    align-self: center;
+  }
+  .author:nth-child(odd) .author-name-job {
+    align-self: center;
+  }
+  .author:nth-child(odd) .author-job {
+    text-align: center;
+  }
   /* Подгоняю img и обводку под макетные данные */
   .author-img img {
     width: 244px;
@@ -286,9 +303,6 @@
   .author-img-bg {
     width: 265px;
     height: 265px;
-  }
-  .author-text {
-    width: 100%;
   }
   /* Центрирую тень иконки автора */
   .author-decor {
