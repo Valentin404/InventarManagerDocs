@@ -269,6 +269,9 @@
   .authors-section {
     margin-top: 90%;
   }
+  .authors-section h1 {
+    text-align: center;
+  }
   .author {
     flex-direction: column-reverse;
     gap: 75px;
