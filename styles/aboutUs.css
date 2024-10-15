@@ -239,31 +239,32 @@
     left: 27.5%;
   }
   .hero-phone-3 {
-    top: 215px;
+    top: 232px;
     left: 55%;
   }
   /* Тени декора телефонов */
-  .hero-phones-decor {
-    width: 227.8px;
-    height: 227.8px;
-  }
   .decor-yellow {
     top: -25px;
     left: 10px;
+    width: 80%;
+    padding-top: 80%;
+    height: 80%;
   }
   .decor-red {
-    width: 322px;
-    height: 322px;
-    top: 100px;
-    left: -10%;
+    width: 125%;
+    padding-top: 125%;
+    height: 125%;
+    top: 80px;
+    left: -12.5%;
   }
   /* Деполнительная синяя тень появляющеяся на моб.версии */
   .decor-blue {
     display: initial;
-    width: 276.26px;
-    height: 276.26px;
-    top: 225px;
-    left: 15%;
+    width: 100%;
+    padding-top: 100%;
+    height: 100%;
+    top: 280px;
+    left: 12.5%;
     background: var(--gradient-blue);
   }
 
