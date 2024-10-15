@@ -129,7 +129,8 @@
     gap: 25px;
   }
   .hero-card {
-    width: 264px;
+    max-width: 304px;
+    width: 100%;
   }
   .hero-card:nth-child(3n) {
     margin-bottom: 50px;
