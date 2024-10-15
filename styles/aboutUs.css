@@ -320,12 +320,12 @@
   }
   /* Центрирую тень иконки автора */
   .author-decor {
-    width: 200%;
-    height: 200%;
+    width: 190%;
+    height: 190%;
     /* width: 508px;
     height: 508px; */
-    top: -55%;
-    left: -55%;
+    top: -30%;
+    left: -35%;
   }
   /* Отступ от кнопки */
   .hero-list {
