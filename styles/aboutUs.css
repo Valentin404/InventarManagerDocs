@@ -276,6 +276,9 @@
   .authors-section h1 {
     text-align: center;
   }
+  .authors {
+    gap: 115px;
+  }
   .author {
     flex-direction: column-reverse;
     gap: 75px;
@@ -308,12 +311,10 @@
   }
   /* Центрирую тень иконки автора */
   .author-decor {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    top: -75%;
-    left: -70%;
-    z-index: -1;
+    width: 508px;
+    height: 508px;
+    top: -55%;
+    left: -55%;
   }
   /* Отступ от кнопки */
   .hero-list {

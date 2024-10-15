@@ -126,13 +126,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 75px;
+    gap: 25px;
   }
   .hero-card {
     width: 264px;
   }
   .hero-card:nth-child(3n) {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
   }
   .card-decor-boll {
     width: 1197px;
@@ -146,7 +146,7 @@
     height: 1250px;
   }
   .boll-red {
-    top: 73%;
+    top: 70%;
     height: 2000px;
   }
 }
