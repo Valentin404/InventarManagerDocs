@@ -225,8 +225,8 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    gap: 50px;
+    margin-top: 50px;
+    gap: 56px;
   }
   .hero-text {
     width: 100%;
@@ -280,15 +280,18 @@
     flex-direction: column-reverse;
     gap: 75px;
   }
+  /* Отмена поведения чётных елементов */
   .author:nth-child(even) {
     flex-direction: column-reverse;
   }
+  /* --------------------------------- */
   .author-text {
     width: 100%;
   }
   .author-name-job {
     align-self: center;
   }
+  /* Отмена поведения нечётных елементов */
   .author:nth-child(odd) .author-name-job {
     align-self: center;
   }
@@ -311,6 +314,10 @@
     top: -75%;
     left: -70%;
     z-index: -1;
+  }
+  /* Отступ от кнопки */
+  .hero-list {
+    margin-bottom: 6gpx;
   }
   /* Кнопка видна по макету только на моб.версии */
   .mobile-btn {
