@@ -3,13 +3,16 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 const langURL = urlParams.get('lang');
-const questionURL = urlParams.get('qwestion');
+const questionID = urlParams.get('qwestion');
 
-const qwestion = datas.docs[0];
+// const qwestion = datas.docs[0];
+const qwestion = datas.docs.find(({_id}) => questionID == _id );
 const answer = qwestion.answer;
 
 const contentAnswer = document.querySelector('#content-answer');
-const titleAnswer = document.querySelector('#title-answer');
+const titleAnswer = document.querySelector('#title-answer'); 
+
+
 
 function getClassForCont (conent, classNameCont){
     switch(conent.length){
@@ -19,7 +22,6 @@ function getClassForCont (conent, classNameCont){
 }
 
 titleAnswer.textContent = qwestion.title;
-
 contentAnswer.innerHTML = answer.map(({conent, className, classNameCont}) => {
     const children = conent.map(({teg, atributes, className, text}) => {
         let addAtributes = '';
@@ -30,13 +32,4 @@ contentAnswer.innerHTML = answer.map(({conent, className, classNameCont}) => {
     return `<div class="${className} ${getClassForCont(conent, classNameCont)}">${children}</div>`
 }).join('')
 
-// const getQwestion = () => {
-//     try {
-//         return lang[langURL]?.docs[questionURL];
-//     } catch (e){
-//         const d = lang.eng.docs[questionURL];
-//         if(d) return d;
-//         return lang.eng.docs[0] 
-//     }
-// }
 
