@@ -22,7 +22,7 @@
   outline: none;
   border: none;
   border-radius: var(--radius);
-  background-image: url(./images/faq/search-icon-figma.png);
+  background-image: url('../images/faq/search-icon-figma.png');
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: 12.5px;
