@@ -89,5 +89,6 @@ searchInput.addEventListener("input", () => {
   }
 });
 
+console.log('-----------faq 0.0.001 ------')
 
 })();

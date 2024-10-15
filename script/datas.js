@@ -15,7 +15,7 @@ const datas = {
                         },
                         {
                             teg : 'img',
-                            atributes : {src : './images/faq/1/1.jpg'},
+                            atributes : {src : './images/faq/1/2.jpg'},
                             className : "photo-left"
                         },
                     ],
@@ -25,13 +25,24 @@ const datas = {
                     conent : [
                         {
                             teg : 'img',
-                            atributes : {src : './images/faq/1/1.jpg'},
+                            atributes : {src : './images/faq/1/3.jpg'},
                             className : "photo-mid"
                         }
                     ],
-                    className : 'cont center',
+                    className : 'cont',
                     classNameCont : 'center' 
-                }
+                },
+                // {   
+                //     conent : [
+                //         {
+                //             teg : 'p',
+                //             className : "text",
+                //             text : "Hello user name ssada dsad sad sad sa d sad dsag sa gdsa fsa df saf sa fdsa fds "
+                //         }
+                //     ],
+                //     className : 'cont',
+                //     classNameCont : 'center mb25' 
+                // }
             ],
             type: 'account',
             _id : '1'
