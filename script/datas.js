@@ -32,17 +32,17 @@ const datas = {
                     className : 'cont',
                     classNameCont : 'center' 
                 },
-                {   
-                    conent : [
-                        {
-                            teg : 'p',
-                            className : "text",
-                            text : "Hello user name ssada dsad sad sad sa d sad dsag sa gdsa fsa df saf sa fdsa fds "
-                        }
-                    ],
-                    className : 'cont',
-                    classNameCont : 'center mb25' 
-                }
+                // {   
+                //     conent : [
+                //         {
+                //             teg : 'p',
+                //             className : "text",
+                //             text : "Hello user name ssada dsad sad sad sa d sad dsag sa gdsa fsa df saf sa fdsa fds "
+                //         }
+                //     ],
+                //     className : 'cont',
+                //     classNameCont : 'center mb25' 
+                // }
             ],
             type: 'account',
             _id : '1'
