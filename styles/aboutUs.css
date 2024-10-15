@@ -317,7 +317,7 @@
   }
   /* Отступ от кнопки */
   .hero-list {
-    margin-bottom: 6gpx;
+    margin-bottom: 5.5px;
   }
   /* Кнопка видна по макету только на моб.версии */
   .mobile-btn {
