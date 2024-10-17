@@ -35,8 +35,9 @@
   );
   --gradient-blue: radial-gradient(
     50% 50% at 50% 50%,
-    rgb(57, 52, 80),
-    rgba(45, 41, 65, 0) 100%,
+    rgb(57, 52, 80) 0%,
+    rgba(57, 52, 80, 0.6) 60%,
+    rgba(45, 41, 65, 0.3) 80%,
     rgba(57, 52, 80, 0) 100%
   );
   --gradient-red: radial-gradient(
