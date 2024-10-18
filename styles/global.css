@@ -441,7 +441,7 @@ footer {
     display: flex;
   }
   .hamburger-menu {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: flex-start;
     gap: 140px;
