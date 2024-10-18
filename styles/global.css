@@ -72,6 +72,7 @@
   background-color: transparent;
   text-decoration: none;
 }
+
 /* size */
 .max-1200 {
   max-width: 1200px;
@@ -166,6 +167,12 @@ body {
   overflow-x: hidden;
 }
 
+/* body.lock-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+} */
+
 section {
   width: 100%;
   display: flex;
@@ -199,6 +206,12 @@ header {
   font-weight: 400;
 }
 
+.nav-menu-mobile {
+  display: contents;
+}
+.cont-filter-black {
+  display: none;
+}
 /* nav */
 nav {
   width: 100%;
@@ -334,6 +347,7 @@ footer {
   position: relative;
   cursor: pointer;
   min-width: 45px;
+  z-index: 999;
 }
 
 .icon span {
@@ -348,7 +362,6 @@ footer {
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-
 
 .icon span:nth-child(1) {
   top: 0px;
@@ -390,7 +403,6 @@ footer {
   }  */
 }
 
-
 /* ----------- */
 
 @media screen and (max-width: 800px) {
@@ -410,19 +422,65 @@ footer {
   }
 
   header .logo img {
-   height: 40px;
+    height: 40px;
   }
   header .logoTitle {
     font-size: 19px;
     line-height: normal;
   }
 
-  nav.row-beetween,
+  /* nav.row-beetween,
   header nav .link-c,
   header .a-download-c {
     display: none;
+  } */
+
+  /* .nav-menu-mobile */
+
+  .cont-filter-black {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30vw;
+    right: -30vw;
+    background-color: rgba(33, 34, 34, 0.5);
+  }
+  .nav-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: -200vw;
+    top: 0;
+    height: calc(100vh - 50px);
+    padding: 25px 0;
+    border-right: 1px solid var(--bg-green);
+    width: calc(70vw - 1px);
+    background-color: rgb(33, 34, 34);
+    z-index: 2;
+    transition: all 0.45s;
+    /* left: 0;  */
+  }
+  .nav-menu-mobile.menu-open {
+    left: 0;
+  }
+  /* .nav-menu-mobile::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background-color: rgba(33, 34, 34, .5);
+  } */
+  .nav-menu-mobile nav {
+    flex-direction: column;
+    gap: 25px;
   }
 
+  /* footer */
   footer {
     position: relative;
     padding-bottom: 200px;
@@ -445,8 +503,8 @@ footer {
   footer .logoTitle {
     font-size: 32px;
     display: block;
-    white-space: nowrap;       
-    overflow: hidden;         
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
   }
   .footer-left-cont {
@@ -471,7 +529,6 @@ footer {
     font-size: var(--font-size-big);
   }
 }
-
 
 @media screen and (max-width: 540px) {
   :root {
