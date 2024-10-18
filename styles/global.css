@@ -167,11 +167,11 @@ body {
   overflow-x: hidden;
 }
 
-/* body.lock-scroll {
-  overflow: hidden;
+body.lock-scroll {
+  /* overflow: hidden; */
   position: fixed;
   width: 100%;
-} */
+}
 
 section {
   width: 100%;
@@ -459,7 +459,7 @@ footer {
     border-right: 1px solid var(--bg-green);
     width: calc(70vw - 1px);
     background-color: rgb(33, 34, 34);
-    z-index: 2;
+    z-index: 100;
     transition: all 0.45s;
     /* left: 0;  */
   }
