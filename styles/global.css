@@ -35,8 +35,9 @@
   );
   --gradient-blue: radial-gradient(
     50% 50% at 50% 50%,
-    rgb(57, 52, 80),
-    rgba(45, 41, 65, 0) 100%,
+    rgb(57, 52, 80) 0%,
+    rgba(57, 52, 80, 0.6) 60%,
+    rgba(45, 41, 65, 0.3) 80%,
     rgba(57, 52, 80, 0) 100%
   );
   --gradient-red: radial-gradient(
@@ -348,7 +349,6 @@ footer {
   transition: 0.25s ease-in-out;
 }
 
-
 .icon span:nth-child(1) {
   top: 0px;
 }
@@ -377,6 +377,11 @@ footer {
   left: 50%;
 }
 
+/* Скрываю бургер меню */
+.hamburger-menu {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   :root {
     --font-size-very-big: 40px;
@@ -388,7 +393,6 @@ footer {
     font-size: var(--font-size-mid);
   }  */
 }
-
 
 /* ----------- */
 
@@ -409,7 +413,7 @@ footer {
   }
 
   header .logo img {
-   height: 40px;
+    height: 40px;
   }
   header .logoTitle {
     font-size: 19px;
@@ -421,6 +425,43 @@ footer {
   header .a-download-c {
     display: none;
   }
+
+  /* Гамбургер меню при клике */
+  
+  /* Клас блокирует прокрутку */
+  body.lock-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+  /* ------------------------ */
+  .hamburger-menu nav,
+  .hamburger-menu nav .link-c,
+  .hamburger-menu .a-download-c {
+    display: flex;
+  }
+  .hamburger-menu {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    gap: 140px;
+    top: 0;
+    left: -75%;
+    bottom: 0;
+    width: 75%;
+    background-color: var(--bg-body);
+    transition: 0.5s;
+    z-index: 999;
+  }
+  .hamburger-menu.active {
+    transform: translateX(100%);
+  }
+  .hamburger-menu nav {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  /* ------------------ */
 
   footer {
     position: relative;
@@ -444,8 +485,8 @@ footer {
   footer .logoTitle {
     font-size: 32px;
     display: block;
-    white-space: nowrap;       
-    overflow: hidden;         
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
   }
   .footer-left-cont {
@@ -470,7 +511,6 @@ footer {
     font-size: var(--font-size-big);
   }
 }
-
 
 @media screen and (max-width: 540px) {
   :root {
