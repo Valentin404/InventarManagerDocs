@@ -167,10 +167,11 @@ body {
   overflow-x: hidden;
 }
 
-body.lock-scroll {
-  /* overflow: hidden; */
-  position: fixed;
-  width: 100%;
+.lock-scroll {
+  overflow: hidden;
+  /* top: 0;
+  position: fixed; */
+  /* width: 100%; */
 }
 
 section {
@@ -420,7 +421,18 @@ footer {
   .icon {
     display: block;
   }
-
+  body {
+    margin-top: 70px;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 92%;
+    left: 0;
+    padding: 0 4%;
+    z-index: 100;
+    background: var(--bg-body);
+  }
   header .logo img {
     height: 40px;
   }
