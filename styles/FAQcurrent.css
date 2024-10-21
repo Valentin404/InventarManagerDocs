@@ -4,14 +4,49 @@
     color: rgb(255, 251, 158);
 }
 main {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 main img {
-    width: 340px;
+  width: 340px;
+  border-radius: 42px;
 }
+/* Рамка для телефона */
+.phone-frame {
+  position: relative;
+  padding-top: 33px;
+  border: 11px solid black;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.camera {
+    position: absolute;
+    top: 7.5px; 
+    left: calc(50% - 100px);
+    width: 9px;
+    height: 9px; 
+    background-color: transparent;
+    border: 5px solid #000; 
+    border-radius: 50%; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+.speaker {
+    position: absolute;
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 5px; 
+    border: 1px solid #000;
+    border-top: 5px solid #000;
+    border-radius: var(--radius);
+    background-color: transparent;
+}
+/* ------------------- */
 main .cont {
-    gap: 30px;
-    width: 100%;
+  gap: 30px;
+  width: 100%;
 }
 .text-note {
     color: rgb(178, 158, 255);

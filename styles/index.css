@@ -244,7 +244,10 @@
 }
 .row-4-info {
   margin-top: 5.5%;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.info {
+  width: 33.33%;
 }
 .info h2 {
   position: relative;
@@ -253,8 +256,8 @@
 .info-decor-boll {
   position: absolute;
   top: -50%;
-  right: -110%;
-  width: 315%;
+  right: -76.2%;
+  width: 250%;
   height: 290%;
   z-index: -1;
   background: radial-gradient(
@@ -409,6 +412,9 @@
     flex-direction: column;
     margin-top: 0;
     gap: 50px;
+  }
+  .info {
+    width: 80%;
   }
   .row-4-info .info p {
     width: 100%;

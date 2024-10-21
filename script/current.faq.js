@@ -30,7 +30,7 @@ contentAnswer.innerHTML = answer.map(({conent, className, classNameCont}) => {
         if(isNote) return `<${teg} class="${className}" ${addAtributes}> <span class="text-note">Note : </span> ${text || ''}</${teg}>`
         if(atributes)  for(const key in atributes) addAtributes += ' ' + key + '="' + atributes[key] + '"';
         switch(teg) {
-            case 'img': return `<div class="phone-bg"><${teg} class="${className}" ${addAtributes}>${text || ''}</${teg}></div>`
+            case 'img': return `<div class="phone-frame"><div class="speaker"></div><div class="camera"></div><div class="phone-bg"><${teg} class="${className}" ${addAtributes}>${text || ''}</${teg}></div></div>`
             default : return `<${teg} class="${className}" ${addAtributes}>${text || ''}</${teg}>`
         }
        
