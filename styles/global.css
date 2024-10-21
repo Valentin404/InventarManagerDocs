@@ -72,6 +72,7 @@
   background-color: transparent;
   text-decoration: none;
 }
+
 /* size */
 .max-1200 {
   max-width: 1200px;
@@ -166,6 +167,10 @@ body {
   overflow-x: hidden;
 }
 
+.lock-scroll {
+  overflow: hidden;
+}
+
 section {
   width: 100%;
   display: flex;
@@ -199,6 +204,12 @@ header {
   font-weight: 400;
 }
 
+.nav-menu-mobile {
+  display: contents;
+}
+.cont-filter-black {
+  display: none;
+}
 /* nav */
 nav {
   width: 100%;
@@ -334,6 +345,7 @@ footer {
   position: relative;
   cursor: pointer;
   min-width: 45px;
+  z-index: 999;
 }
 
 .icon span {
@@ -411,7 +423,18 @@ footer {
   .icon {
     display: block;
   }
-
+  body {
+    margin-top: 70px;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 92%;
+    left: 0;
+    padding: 0 4%;
+    z-index: 100;
+    background: var(--bg-body);
+  }
   header .logo img {
     height: 40px;
   }
@@ -420,49 +443,43 @@ footer {
     line-height: normal;
   }
 
-  nav.row-beetween,
-  header nav .link-c,
-  header .a-download-c {
-    display: none;
-  }
+  /* .nav-menu-mobile */
 
-  /* Гамбургер меню при клике */
-  
-  /* Клас блокирует прокрутку */
-  body.lock-scroll {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-  }
-  /* ------------------------ */
-  .hamburger-menu nav,
-  .hamburger-menu nav .link-c,
-  .hamburger-menu .a-download-c {
-    display: flex;
-  }
-  .hamburger-menu {
-    position: fixed;
-    display: flex;
-    justify-content: flex-start;
-    gap: 140px;
+  .cont-filter-black {
+    display: block;
+    position: absolute;
     top: 0;
-    left: -75%;
-    bottom: 0;
-    width: 75%;
-    background-color: var(--bg-body);
-    transition: 0.5s;
-    z-index: 999;
+    height: 100%;
+    width: 30vw;
+    right: -30vw;
+    background-color: rgba(33, 34, 34, 0.5);
   }
-  .hamburger-menu.active {
-    transform: translateX(100%);
+  .nav-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: -200vw;
+    top: 0;
+    height: calc(100vh - 50px);
+    padding: 25px 0;
+    border-right: 1px solid var(--bg-green);
+    width: calc(70vw - 1px);
+    background-color: rgb(33, 34, 34);
+    z-index: 100;
+    transition: all 0.45s;
+    min-width: 220px;
   }
-  .hamburger-menu nav {
-    margin-top: 20px;
-    gap: 20px;
+  .nav-menu-mobile.menu-open {
+    left: 0;
+  }
+  .nav-menu-mobile nav {
+    flex-direction: column;
+    gap: 25px;
   }
 
-  /* ------------------ */
-
+  /* footer */
   footer {
     position: relative;
     padding-bottom: 200px;

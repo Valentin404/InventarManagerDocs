@@ -204,7 +204,7 @@
 }
 .row-3-text {
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 25px;
 }
 .round {

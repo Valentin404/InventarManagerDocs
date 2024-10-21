@@ -1,12 +1,16 @@
 const headerMobileBtn = document.querySelector('#header-mobile-btn');
-const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenuMobile = document.querySelector('.nav-menu-mobile');
+const html = document.querySelector('html');
+const contFilterBlack = document.querySelector('.cont-filter-black');
 
 headerMobileBtn.addEventListener('click', ()=> {
     headerMobileBtn.classList.toggle('menu-open')
-    // document.querySelector('.links').classList.toggle('mobileMenu')
-    
-    //Блокирую скролл
-    document.body.classList.toggle('lock-scroll');
-    //Добавляю клас active для hamburger-menu
-    hamburgerMenu.classList.toggle('active');
+    navMenuMobile.classList.toggle('menu-open')
+    html.classList.toggle('lock-scroll');
+})
+
+contFilterBlack.addEventListener('click', ()=> {
+    headerMobileBtn.classList.toggle('menu-open')
+    navMenuMobile.classList.toggle('menu-open')
+    html.classList.toggle('lock-scroll');
 })
