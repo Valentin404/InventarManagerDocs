@@ -29,9 +29,18 @@ function searchedQuestions(el) {
   readMoreBtn.href = location.hostname.includes('127')
     ? location.origin + '/FAQcurrent.html?qwestion=' + el._id
     : 'https://valentin404.github.io/InventarManagerDocs/FAQcurrent.html?qwestion=' + el._id // for reliz
-  ask.textContent = el.title;
 
-  container.append(ask);
+    container.append(ask);
+    
+    if(el.img) {
+      const img = document.createElement("img");
+      img.src = el.img;
+      img.classList.add('img-text-qwestion')
+      container.append(img);
+    } 
+    
+    ask.textContent = el.title + ' ?';
+
   container.append(readMoreBtn);
   answersStack.appendChild(container);
 }

@@ -148,6 +148,11 @@
 
 /* ------------ */
 
+.img-text-qwestion {
+  width: 35px;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1000px) {
   .questions-category {
     gap: 15px;
