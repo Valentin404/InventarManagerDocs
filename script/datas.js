@@ -126,7 +126,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'account',
@@ -144,7 +144,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'account',
@@ -245,7 +245,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'confidentially',
@@ -263,7 +263,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'confidentially',
@@ -282,7 +282,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'contact',
@@ -300,7 +300,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'contact',
@@ -350,7 +350,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'payment',
@@ -368,7 +368,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'payment',
@@ -386,7 +386,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'payment',
@@ -523,7 +523,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
             ],
             type: 'worker',
@@ -543,7 +543,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -607,7 +607,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -619,7 +619,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -668,7 +668,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
             ],
             type: 'transaction',
@@ -686,7 +686,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
             ],
             type: 'transaction',
@@ -704,7 +704,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -715,7 +715,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -726,7 +726,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -737,7 +737,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -771,7 +771,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
             ],
             type: 'function',
@@ -790,7 +790,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -801,7 +801,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -812,7 +812,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -823,7 +823,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -834,7 +834,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -845,7 +845,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -856,7 +856,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -867,7 +867,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -878,7 +878,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -889,7 +889,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -900,7 +900,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -911,7 +911,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -922,7 +922,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -933,7 +933,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -944,7 +944,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -955,7 +955,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -966,7 +966,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -977,7 +977,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -988,7 +988,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -999,7 +999,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1010,7 +1010,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1021,7 +1021,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
             ],
             type: 'function',
@@ -1039,7 +1039,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1050,7 +1050,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1061,7 +1061,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1072,7 +1072,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1083,7 +1083,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1094,7 +1094,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1105,7 +1105,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1116,7 +1116,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1127,7 +1127,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1138,7 +1138,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1149,7 +1149,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1160,7 +1160,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1171,7 +1171,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1182,7 +1182,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1193,7 +1193,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1204,7 +1204,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1215,7 +1215,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1226,7 +1226,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1237,7 +1237,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1248,7 +1248,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 }
             ],
             type: 'function',
@@ -1266,7 +1266,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1277,7 +1277,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1354,7 +1354,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1365,7 +1365,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1376,7 +1376,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
 
             ],
@@ -1395,7 +1395,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
             ],
             type: 'function',
@@ -1413,7 +1413,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1457,7 +1457,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1468,7 +1468,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1479,7 +1479,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1523,7 +1523,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1568,7 +1568,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [

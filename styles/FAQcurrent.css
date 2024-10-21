@@ -1,11 +1,11 @@
 .title-qwestion {
-    margin-bottom: 30px;
+    align-self: flex-start;
+    margin-bottom: 60px;
     /* color: rgb(255, 104, 104); */
     color: rgb(255, 251, 158);
-    text-align: center;
 }
 main {
-  padding: 100px 0;
+  padding: 125px 0;
 }
 main img {
   width: 340px;
@@ -48,6 +48,7 @@ main img {
 main .cont {
   gap: 30px;
   width: 100%;
+  margin-bottom: 25px;
 }
 .text-note {
     color: rgb(178, 158, 255);
