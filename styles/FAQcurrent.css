@@ -1,5 +1,7 @@
 .title-qwestion {
     margin-bottom: 30px;
+    /* color: rgb(255, 104, 104); */
+    color: rgb(255, 251, 158);
 }
 main {
     padding: 100px 0;
@@ -11,7 +13,12 @@ main .cont {
     gap: 30px;
     width: 100%;
 }
-
-.content-c {
-    gap: 20px;
+.text-note {
+    color: rgb(178, 158, 255);
 }
+.img-title {
+    width: 35px;
+}
+/* .content-c {
+    gap: 10px;
+} */

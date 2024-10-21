@@ -21,12 +21,14 @@ function getClassForCont (conent, classNameCont){
     }
 }
 
-titleAnswer.textContent = qwestion.title + ' ?';
-contentAnswer.innerHTML = answer.map(({conent, className, classNameCont}) => {
-    const children = conent.map(({teg, atributes, className, text}) => {
-        let addAtributes = '';
-        if(atributes)  for(const key in atributes) addAtributes += ' ' + key + '="' + atributes[key] + '"';
 
+const dopTitleQwestion = qwestion.img ? ` ( <img class="img-title" src="${qwestion.img}"/> ) ?` : ' ?' 
+titleAnswer.innerHTML = qwestion.title + dopTitleQwestion;
+contentAnswer.innerHTML = answer.map(({conent, className, classNameCont}) => {
+    const children = conent.map(({teg, atributes, className, text, isNote}) => {
+        let addAtributes = '';
+        if(isNote) return `<${teg} class="${className}" ${addAtributes}> <span class="text-note">Note : </span> ${text || ''}</${teg}>`
+        if(atributes)  for(const key in atributes) addAtributes += ' ' + key + '="' + atributes[key] + '"';
         switch(teg) {
             case 'img': return `<div class="phone-bg"><${teg} class="${className}" ${addAtributes}>${text || ''}</${teg}></div>`
             default : return `<${teg} class="${className}" ${addAtributes}>${text || ''}</${teg}>`
