@@ -1,6 +1,9 @@
 .title-qwestion {
     margin-bottom: 30px;
 }
+main {
+    padding: 100px 0;
+}
 main img {
     width: 340px;
 }
@@ -9,3 +12,6 @@ main .cont {
     width: 100%;
 }
 
+.content-c {
+    gap: 20px;
+}
