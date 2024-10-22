@@ -86,7 +86,7 @@ main .cont {
     width: 5px;
     height: 5px;
     border: 4px solid #000;
-    left: calc(50% - 65px);
+    left: calc(50% - 61.5px);
   }
   .speaker {
     width: 30px;
