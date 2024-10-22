@@ -468,7 +468,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -588,7 +588,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
             ],
             type: 'folder',
@@ -1299,7 +1299,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
@@ -1325,7 +1325,7 @@ const datas = {
                         }
                     ],
                     className: 'cont',
-                    classNameCont: 'center mb25'
+                    classNameCont: 'center-left mb25'
                 },
                 {
                     conent: [
