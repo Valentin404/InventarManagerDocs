@@ -1,23 +1,24 @@
 .title-qwestion {
-    align-self: flex-start;
-    margin-bottom: 50px;
-    /* color: rgb(255, 104, 104); */
-    color: rgb(255, 251, 158);
-    text-align: center;
-    width: 100%;
+  align-self: flex-start;
+  margin-bottom: 50px;
+  /* color: rgb(255, 104, 104); */
+  color: rgb(255, 251, 158);
+  text-align: center;
+  width: 100%;
 }
 main {
   padding: 120px 0;
 }
 main img {
   display: block;
-  max-width: 340px;
-  width: 100%;
+  max-width: 100%;
   border-radius: 42px;
 }
 /* Рамка для телефона */
 .phone-frame {
   position: relative;
+  max-width: 340px;
+  width: 100%;
   padding-top: 33px;
   border: 11px solid black;
   border-radius: 50px;
@@ -26,27 +27,27 @@ main img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .camera {
-    position: absolute;
-    top: 7.5px; 
-    left: calc(50% - 100px);
-    width: 9px;
-    height: 9px; 
-    background-color: transparent;
-    border: 5px solid #000; 
-    border-radius: 50%; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  top: 7.5px;
+  left: calc(50% - 30%);
+  width: 2.5%;
+  height: 1.25%;
+  background-color: transparent;
+  border: 0.3rem solid #000;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .speaker {
-    position: absolute;
-    top: 10px; 
-    left: 50%;
-    transform: translateX(-50%);
-    width: 45px;
-    height: 5px; 
-    border: 1px solid #000;
-    border-top: 5px solid #000;
-    border-radius: var(--radius);
-    background-color: transparent;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 5px;
+  border: 1px solid #000;
+  border-top: 5px solid #000;
+  border-radius: var(--radius);
+  background-color: transparent;
 }
 /* ------------------- */
 main .cont {
@@ -55,16 +56,14 @@ main .cont {
   margin-bottom: 25px;
 }
 .text-note {
-    color: rgb(178, 158, 255);
+  color: rgb(178, 158, 255);
 }
 .img-title {
-    width: 35px;
+  width: 35px;
 }
 /* .content-c {
     gap: 10px;
 } */
-
-
 
 @media screen and (max-width: 800px) {
   .title-qwestion:has(img) {
@@ -72,5 +71,14 @@ main .cont {
   }
   .evenly-center {
     flex-direction: column;
+  }
+  .phone-frame {
+    max-width: 210px;
+    padding-top: 28px;
+    border: 6px solid black;
+    border-radius: 35px;
+  }
+  main img {
+    border-radius: 32px;
   }
 }
