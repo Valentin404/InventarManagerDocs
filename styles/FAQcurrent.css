@@ -8,6 +8,7 @@ main {
   padding: 140px 0;
 }
 main img {
+  display: block;
   width: 340px;
   border-radius: 42px;
 }
