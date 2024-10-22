@@ -42,7 +42,7 @@
         }).join('')
 
     } else {
-        titleAnswer.textContent = "No Found qwestion"
+        titleAnswer.textContent = "No Found question"
         contentAnswer.innerHTML = ""
 
     }
