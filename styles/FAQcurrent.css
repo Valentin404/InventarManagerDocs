@@ -3,6 +3,8 @@
     margin-bottom: 50px;
     /* color: rgb(255, 104, 104); */
     color: rgb(255, 251, 158);
+    text-align: center;
+    width: 100%;
 }
 main {
   padding: 120px 0;
@@ -66,7 +68,7 @@ main .cont {
 
 @media screen and (max-width: 800px) {
   .title-qwestion:has(img) {
-    font-size: 20px;
+    font-size: 6vw;
   }
   .evenly-center {
     flex-direction: column;
