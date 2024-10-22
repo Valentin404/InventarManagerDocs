@@ -42,7 +42,7 @@
         }).join('')
 
     } else {
-        titleAnswer.textContent = "No Found question"
+        titleAnswer.textContent = "Error 404: Such question was not found."
         contentAnswer.innerHTML = ""
 
     }
