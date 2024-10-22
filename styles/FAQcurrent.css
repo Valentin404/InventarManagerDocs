@@ -29,11 +29,11 @@ main img {
 .camera {
   position: absolute;
   top: 7.5px;
-  left: calc(50% - 30%);
-  width: 2.5%;
-  height: 1.25%;
+  left: calc(50% - 100px);
+  width: 8px;
+  height: 8px;
   background-color: transparent;
-  border: 0.3rem solid #000;
+  border: 6px solid #000;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -74,11 +74,23 @@ main .cont {
   }
   .phone-frame {
     max-width: 210px;
-    padding-top: 28px;
+    padding-top: 26px;
     border: 6px solid black;
     border-radius: 35px;
   }
   main img {
     border-radius: 32px;
+  }
+  .camera {
+    top: 6.5px;
+    width: 5px;
+    height: 5px;
+    border: 4px solid #000;
+    left: calc(50% - 65px);
+  }
+  .speaker {
+    width: 30px;
+    height: 1.5px;
+    border-top: 3.5px solid #000;
   }
 }
