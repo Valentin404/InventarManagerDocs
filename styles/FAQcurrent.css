@@ -3,6 +3,8 @@
     margin-bottom: 50px;
     /* color: rgb(255, 104, 104); */
     color: rgb(255, 251, 158);
+    text-align: center;
+    width: 100%;
 }
 main {
   padding: 120px 0;
