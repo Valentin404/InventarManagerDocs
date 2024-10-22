@@ -22,7 +22,7 @@ function getClassForCont (conent, classNameCont){
 }
 
 
-const dopTitleQwestion = qwestion.img ? ` ( <img class="img-title" src="${qwestion.img}"/> ) ?` : ' ?' 
+const dopTitleQwestion = qwestion.img ? ` ( <div><img class="img-title" src="${qwestion.img}"/></div> ) ?` : ' ?' 
 titleAnswer.innerHTML = qwestion.title + dopTitleQwestion;
 contentAnswer.innerHTML = answer.map(({conent, className, classNameCont}) => {
     const children = conent.map(({teg, atributes, className, text, isNote}) => {
