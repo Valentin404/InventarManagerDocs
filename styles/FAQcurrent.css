@@ -74,12 +74,12 @@ main .cont {
   }
   .phone-frame {
     max-width: 210px;
-    padding-top: 26px;
+    padding-top: 25px;
     border: 6px solid black;
     border-radius: 35px;
   }
   main img {
-    border-radius: 32px;
+    border-radius: 28px;
   }
   .camera {
     top: 6.5px;
