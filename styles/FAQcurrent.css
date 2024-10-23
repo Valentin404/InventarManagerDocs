@@ -73,9 +73,9 @@ main .cont {
     flex-direction: column;
   }
   .phone-frame {
-    max-width: 210px;
-    padding-top: 25px;
-    border: 6px solid black;
+    max-width: 300px;
+    padding-top: 29px;
+    border: 8px solid black;
     border-radius: 35px;
   }
   main img {
@@ -83,14 +83,14 @@ main .cont {
   }
   .camera {
     top: 6.5px;
-    width: 5px;
-    height: 5px;
-    border: 4px solid #000;
-    left: calc(50% - 61.5px);
+    width: 7.5px;
+    height: 7.5px;
+    border: 4.5px solid #000;
+    left: calc(50% - 90px);
   }
   .speaker {
-    width: 30px;
-    height: 1.5px;
+    width: 39px;
+    height: 2.5px;
     border-top: 3.5px solid #000;
   }
 }
