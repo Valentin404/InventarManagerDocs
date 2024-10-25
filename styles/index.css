@@ -125,7 +125,7 @@
 }
 .circle {
   width: 115px;
-  min-height: 112px;
+  min-height: 115px;
   border-radius: var(--rounded-radius);
   background: rgb(255, 251, 158);
   margin-bottom: 10%;
