@@ -116,6 +116,7 @@
   margin-bottom: 3%;
 }
 .ask-card p {
+  margin-bottom: 20пшpx;
   overflow-y: auto;
 }
 .ask-card p::-webkit-scrollbar {
