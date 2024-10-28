@@ -115,6 +115,12 @@
   background: var(--bg-body);
   margin-bottom: 3%;
 }
+.ask-card p {
+  overflow-y: auto;
+}
+.ask-card p::-webkit-scrollbar {
+  display: none;
+}
 /* Декор boll для каждого 5-эл следуя figma-макета */
 
 .ask-card:nth-child(5n)::after {

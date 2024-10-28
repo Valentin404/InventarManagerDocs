@@ -123,6 +123,12 @@
   background-color: var(--bg-decor);
   border: 0.5px solid var(--bg-decor-border);
 }
+.box p {
+  overflow-y: auto;
+}
+.box p::-webkit-scrollbar {
+  display: none;
+}
 .circle {
   width: 115px;
   min-height: 115px;
