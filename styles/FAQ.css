@@ -30,6 +30,7 @@
 }
 .search-input::placeholder {
   color: var(--color-grey);
+  transform: translateY(1px);
 }
 
 /* категории вопросов (types) */
