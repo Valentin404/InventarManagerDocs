@@ -462,7 +462,7 @@ footer {
     position: fixed;
     left: -200vw;
     top: 0;
-    height: calc(100vh - 50px);
+    bottom: 0;
     padding: 25px 0;
     border-right: 1px solid var(--bg-green);
     width: calc(70vw - 1px);
