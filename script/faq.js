@@ -101,3 +101,8 @@ searchInput.addEventListener("input", () => {
 console.log('-----------faq 0.0.001 ------')
 
 })();
+
+check.onclick = () => {
+  questionsCategory.classList.toggle('show-panel');
+  html.classList.toggle('lock-scroll');
+};

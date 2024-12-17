@@ -172,3 +172,70 @@
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .hero-faq {
+    flex-direction: column;
+    margin-top: 250px;
+  }
+
+  .hero-faq-left {
+    gap: 0;
+  }
+
+  #questionTitle {
+    position: absolute;
+    top: -15rem;
+    font-size: var(--font-size-very-big);
+  }
+
+  .search-input {
+
+  }
+
+  .questions-category {
+    position: fixed;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: -500px;
+    width: 100%;
+    background-color: var(--bg-body);
+    z-index: 100;
+    transition: .5s;
+  }
+
+  .questions-category.show-panel {
+    right: 0;
+  }
+
+  .active-press {
+    transform: translateX(0);
+  }
+  .questions-category .text:hover {
+    transform: translateX(0);
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .ask-card {
+    position: relative;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 215px;
+    border: 1px solid var(--bg-decor-border);
+    border-radius: var(--radius);
+    text-align: center;
+    background: var(--bg-body);
+    margin-bottom: 3%;
+  }
+
+  .hero-faq-right h2 {
+    text-align: center;
+}
+}
