@@ -1588,16 +1588,16 @@ const datas = {
         },
     ],
     types: {
-        account: 'Акаунт',
-        setting: 'Налаштування та персоналізація',
-        confidentially: 'Конфиденциальность и данные',
-        contact: 'Контакти та підтримка',
-        payment: 'Оплата та підписка',
-        worker: 'Співробітники',
-        folder: 'Папки',
-        transaction: 'Управління транзакціями',
-        function: 'Функції та можливості',
-        button: 'Кнопки'
+        account: 'Account',
+        setting: 'Settings and personalization',
+        confidentially: 'Privacy and data',
+        contact: 'Contacts and support',
+        payment: 'Payment and subscription',
+        worker: 'Employees',
+        folder: 'Folders',
+        transaction: 'Transaction management',
+        function: 'Features and capabilities',
+        button: 'Buttons'
     }
 }
 
