@@ -1,3 +1,5 @@
+const panelToggle = document.querySelector('.show-hide-panel');
+
 (function(){
 const types = datas.types;
 
@@ -102,7 +104,7 @@ console.log('-----------faq 0.0.001 ------')
 
 })();
 
-check.onclick = () => {
+panelToggle.addEventListener('click', () => {
   questionsCategory.classList.toggle('show-panel');
   html.classList.toggle('lock-scroll');
-};
+});
