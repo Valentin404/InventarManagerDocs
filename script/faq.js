@@ -106,5 +106,6 @@ console.log('-----------faq 0.0.001 ------')
 
 panelToggle.addEventListener('click', () => {
   questionsCategory.classList.toggle('show-panel');
+  panelToggle.classList.toggle('show-panel');
   html.classList.toggle('lock-scroll');
 });
