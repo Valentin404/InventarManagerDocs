@@ -171,6 +171,18 @@
 
 /* -------------------------------- */
 
+/* Заголовок для панели */
+
+#questionTitle2 {
+  display: none;
+}
+
+/* Доп инпут в панели справа */
+
+.search-input2 {
+  display: none;
+}
+
 /* ------ Мобильная Адапиация ----- */
 
 @media screen and (max-width: 800px) {
@@ -191,22 +203,38 @@
     font-size: 36px;
   }
 
+  /* Заголовок для панели */
+
+  #questionTitle2 {
+    display: initial;
+    position: fixed;
+    top: 10%;
+    text-align: center;
+    width: 50%;
+    font-size: var(--font-size-big);
+  }
+
   .search-input {
-    width: 80%;
+    width: 15em;
     padding: 3.5px 15px 3.5px 42px;
+  }
+
+  /* input для панели */
+
+  .search-input2 {
+    display: initial;
   }
 
   /* Открытие-закрытие боковой панели */
 
   .show-hide-panel {
-    display: inline-block; 
+    display: initial;
     position: fixed;
     right: 2.5%;
     top: 69%;
     z-index: 101;
   }
-  
-  
+
   .show-hide-panel.show-panel::before {
     content: "";
     position: absolute;
@@ -218,24 +246,31 @@
     z-index: -1;
     filter: blur(10px);
   }
-  
-  
 
   /* -------------------------------- */
 
-  .questions-category {
-    position: fixed;
+  /* Панель справа */
+
+  .right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5%;
+    padding-top: 55%;
     align-items: center;
+    position: fixed;
     top: 0;
     bottom: 0;
-    right: -500px;
+    right: -100%;
     width: 100%;
     background-color: var(--bg-body);
     z-index: 100;
     transition: 0.5s;
   }
+  .questions-category {
+    align-items: center;
+  }
 
-  .questions-category.show-panel {
+  .right-panel.show-panel {
     right: 0;
   }
 
