@@ -227,43 +227,13 @@
     padding: 3.5px 15px 3.5px 42px;
   }
 
-  /* input для панели */
+   /* Панель справа */
 
-  .search-input2 {
-    display: initial;
-  }
-
-  /* Открытие-закрытие боковой панели */
-
-  .show-hide-panel {
-    display: initial;
-    position: fixed;
-    right: 2.5%;
-    top: 69%;
-    z-index: 101;
-  }
-
-  .show-hide-panel.show-panel::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0.4em;
-    background-color: rgba(26, 73, 48, 1);
-    z-index: -1;
-    filter: blur(10px);
-  }
-
-  /* -------------------------------- */
-
-  /* Панель справа */
-
-  .right-panel {
+   .right-panel {
     display: flex;
     flex-direction: column;
     gap: 7.5%;
-    padding-top: 25%;
+    padding-top: 100px;
     align-items: center;
     position: fixed;
     top: 0;
@@ -289,6 +259,37 @@
   .questions-category .text:hover {
     transform: translateX(0);
   }
+
+  /* input для панели */
+
+  .search-input2 {
+    display: initial;
+    width: 60%;
+  }
+
+  /* Открытие-закрытие боковой панели */
+
+  .show-hide-panel {
+    display: initial;
+    position: fixed;
+    right: 2.5%;
+    top: 69%;
+    z-index: 101;
+  }
+
+  .show-hide-panel.show-panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0.4em;
+    background-color: rgba(26, 73, 48, 1);
+    z-index: -1;
+    filter: blur(10px);
+  }
+
+  /* -------------------------------- */
 
   .cards-container {
     flex-direction: column;
