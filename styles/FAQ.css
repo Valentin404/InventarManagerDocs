@@ -22,7 +22,7 @@
   outline: none;
   border: none;
   border-radius: var(--radius);
-  background-image: url('../images/faq/search-icon-figma.png');
+  background-image: url("../images/faq/search-icon-figma.png");
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: 12.5px;
@@ -173,10 +173,22 @@
   }
 }
 
+/* Открытие-закрытие боковой панели */
+
+.show-hide-panel {
+  display: none;
+}
+
+/* -------------------------------- */
+
+/* ------ Мобильная Адапиация ----- */
+
 @media screen and (max-width: 800px) {
   .hero-faq {
     flex-direction: column;
+    align-items: center;
     margin-top: 250px;
+    gap: 75px;
   }
 
   .hero-faq-left {
@@ -185,13 +197,25 @@
 
   #questionTitle {
     position: absolute;
-    top: -15rem;
-    font-size: var(--font-size-very-big);
+    top: -16rem;
+    font-size: 36px;
   }
 
   .search-input {
-
+    width: 80%;
   }
+
+  /* Открытие-закрытие боковой панели */
+
+  .show-hide-panel {
+    display: initial;
+    position: fixed;
+    right: 2.5%;
+    top: 69%;
+    z-index: 101;
+  }
+
+  /* -------------------------------- */
 
   .questions-category {
     position: fixed;
@@ -202,7 +226,7 @@
     width: 100%;
     background-color: var(--bg-body);
     z-index: 100;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .questions-category.show-panel {
@@ -226,16 +250,10 @@
   .ask-card {
     position: relative;
     justify-content: space-evenly;
-    width: 80%;
-    height: 215px;
-    border: 1px solid var(--bg-decor-border);
-    border-radius: var(--radius);
-    text-align: center;
-    background: var(--bg-body);
-    margin-bottom: 3%;
+    width: 70%;
   }
 
   .hero-faq-right h2 {
     text-align: center;
-}
+  }
 }
