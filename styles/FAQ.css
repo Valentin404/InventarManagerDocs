@@ -269,7 +269,7 @@
 
   /* Открытие-закрытие боковой панели */
 
-  .show-hide-panel {
+  .panel-toggle {
     display: initial;
     position: fixed;
     right: 2.5%;
@@ -277,7 +277,7 @@
     z-index: 101;
   }
 
-  .show-hide-panel.show-panel::before {
+  .panel-toggle:hover::before {
     content: "";
     position: absolute;
     top: 0;
@@ -286,6 +286,7 @@
     left: 0.4em;
     background-color: rgba(26, 73, 48, 1);
     z-index: -1;
+    border-radius: 50%;
     filter: blur(10px);
   }
 

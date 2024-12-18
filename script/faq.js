@@ -8,7 +8,7 @@
   const searchInput = document.querySelector("#searchInput");
   const searchInput2 = document.querySelector("#searchInput2");
   const rightPanel = document.querySelector(".right-panel");
-  const panelToggle = document.querySelector(".show-hide-panel");
+  const panelToggle = document.querySelector(".panel-toggle");
 
   function removeLastActive() {
     const lastActive = document.querySelector(".text.active-press");
@@ -104,7 +104,6 @@
 
   panelToggle.addEventListener("click", () => {
     rightPanel.classList.toggle("show-panel");
-    panelToggle.classList.toggle("show-panel");
     html.classList.toggle("lock-scroll");
   });
 
