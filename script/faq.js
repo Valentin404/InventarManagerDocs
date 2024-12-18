@@ -103,8 +103,10 @@
   searchInput2.addEventListener("input", searchOptions);
 
   panelToggle.addEventListener("click", () => {
+    panelToggle.classList.add("active");
     rightPanel.classList.toggle("show-panel");
     html.classList.toggle("lock-scroll");
+    setTimeout(() => panelToggle.classList.remove("active"), 250);
   });
 
   console.log("-----------faq 0.0.001 ------");
