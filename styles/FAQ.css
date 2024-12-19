@@ -281,7 +281,7 @@
     z-index: 101;
   }
 
-  .panel-toggle.active::before {
+  .panel-toggle:active::before {
     content: "";
     position: absolute;
     top: 0;

@@ -61,7 +61,8 @@
       searchInput.value = searchInput2.value = "";
       question.classList.add("active-press");
       answersStack.innerHTML = "";
-      questionTitle.textContent = questionTitle2.textContent = question.textContent;
+      questionTitle.textContent = questionTitle2.textContent =
+        question.textContent;
 
       datas.docs.filter((el) => el.type === type).forEach(searchedQuestions);
     };
@@ -87,26 +88,32 @@
     answersStack.innerHTML = "";
     searchInput.value = this.value;
     searchInput2.value = this.value;
+
     if (this.value.trim()) {
       removeLastActive();
-      datas.docs
-        .filter((el) => {
-          const regex = new RegExp(this.value, "gi");
-          return el.title.match(regex);
-        })
-        .forEach(searchedQuestions);
 
-      questionTitle.textContent = questionTitle2.textContent = "Text for manual entry"
+      const filteredQuestions = datas.docs.filter((el) => {
+        const regex = new RegExp(this.value, "gi");
+        return el.title.match(regex);
+      });
+
+      if (filteredQuestions.length) {
+        filteredQuestions.forEach(searchedQuestions);
+        questionTitle.textContent = questionTitle2.textContent =
+          "Text for manual entry";
+      } else if (this.value.trim()) {
+        questionTitle.textContent = questionTitle2.textContent =
+          "Nothing found";
+      }
     }
   }
+
   searchInput.addEventListener("input", searchOptions);
   searchInput2.addEventListener("input", searchOptions);
 
   panelToggle.addEventListener("click", () => {
-    panelToggle.classList.add("active");
     rightPanel.classList.toggle("show-panel");
     html.classList.toggle("lock-scroll");
-    setTimeout(() => panelToggle.classList.remove("active"), 250);
   });
 
   console.log("-----------faq 0.0.001 ------");
