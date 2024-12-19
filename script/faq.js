@@ -85,28 +85,29 @@
   // });
 
   function searchOptions() {
+    answersStack.classList.remove("center-title", "searching-title");
     answersStack.innerHTML = "";
-    searchInput.value = this.value;
-    searchInput2.value = this.value;
+    searchInput.value = searchInput2.value = this.value;
 
-    if (this.value.trim()) {
-      removeLastActive();
+    const query = this.value.trim();
 
-      const filteredQuestions = datas.docs.filter((el) => {
-        const regex = new RegExp(this.value, "gi");
-        return el.title.match(regex);
-      });
+    if (query) {
+        removeLastActive();
+        const filteredQuestions = datas.docs.filter(el => new RegExp(query, "gi").test(el.title));
 
-      if (filteredQuestions.length) {
-        filteredQuestions.forEach(searchedQuestions);
-        questionTitle.textContent = questionTitle2.textContent =
-          "Text for manual entry";
-      } else if (this.value.trim()) {
-        questionTitle.textContent = questionTitle2.textContent =
-          "Nothing found";
-      }
+        if (filteredQuestions.length) {
+            filteredQuestions.forEach(searchedQuestions);
+            questionTitle.textContent = questionTitle2.textContent = "Text for manual entry";
+        } else {
+            answersStack.classList.add("searching-title");
+            answersStack.textContent = "Nothing found";
+        }
+    } else {
+        answersStack.classList.add("searching-title");
+        answersStack.textContent = "Type that into the search to get results or select one of the question topics.";
     }
-  }
+}
+
 
   searchInput.addEventListener("input", searchOptions);
   searchInput2.addEventListener("input", searchOptions);
