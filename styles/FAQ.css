@@ -171,6 +171,10 @@
 
 /* -------------------------------- */
 
+.panel-toggle {
+  display: none;
+}
+
 /* Заголовок для панели */
 
 .question-title-category-panel {
