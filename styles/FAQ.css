@@ -207,6 +207,7 @@
 
   .hero-faq-left {
     align-items: center;
+    width: 100%;
     gap: 0;
   }
 
@@ -225,8 +226,8 @@
     position: relative;
     text-align: center;
     width: 50%;
-    height: 2em;
-    margin-bottom: 4rem;
+    height: 1em;
+    margin-bottom: 3em;
   }
   
   #questionTitle2 {
@@ -235,7 +236,7 @@
   }
 
   .search-input {
-    width: 14rem;
+    width: 70%;
     padding: 3.5px 15px 3.5px 42px;
   }
 
@@ -245,7 +246,7 @@
     display: flex;
     flex-direction: column;
     gap: 7.5%;
-    padding-top: 100px;
+    padding-top: 5em;
     align-items: center;
     position: fixed;
     top: 0;
@@ -259,6 +260,7 @@
   }
   .questions-category {
     align-items: center;
+    margin-bottom: 10%;
   }
 
   .right-panel.show-panel {
@@ -276,7 +278,6 @@
 
   .search-input2 {
     display: initial;
-    width: 60%;
   }
 
   /* Открытие-закрытие боковой панели */
@@ -284,9 +285,13 @@
   .panel-toggle {
     display: initial;
     position: fixed;
-    right: 2.5%;
-    top: 69%;
+    right: 0;
+    top: 47.5%;
+    transform: scale(0.8);
     z-index: 101;
+  }
+  .panel-toggle.show-panel {
+    transform: rotate(180deg) scale(0.8);
   }
 
   .panel-toggle:active::before {
@@ -315,7 +320,7 @@
     position: relative;
     justify-content: space-evenly;
     width: 70%;
-    height: 13.5em;
+    height: 14.5rem;
   }
 
   .hero-faq-right h2 {

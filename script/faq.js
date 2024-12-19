@@ -60,6 +60,8 @@
       removeLastActive();
       searchInput.value = searchInput2.value = "";
       question.classList.add("active-press");
+      answersStack.classList.add("right-panel");
+      answersStack.classList.remove("center-title", "searching-title");
       answersStack.innerHTML = "";
       questionTitle.textContent = questionTitle2.textContent =
         question.textContent;
@@ -100,7 +102,7 @@
             questionTitle.textContent = questionTitle2.textContent = "Text for manual entry";
         } else {
             answersStack.classList.add("searching-title");
-            answersStack.textContent = "Nothing found";
+            answersStack.textContent = "Not found. (Please enter English characters only)";
         }
     } else {
         answersStack.classList.add("searching-title");
@@ -114,6 +116,7 @@
 
   panelToggle.addEventListener("click", () => {
     rightPanel.classList.toggle("show-panel");
+    panelToggle.classList.toggle("show-panel");
     html.classList.toggle("lock-scroll");
   });
 
