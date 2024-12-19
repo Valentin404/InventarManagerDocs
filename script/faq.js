@@ -104,6 +104,7 @@
         }
     } else {
         answersStack.classList.add("searching-title");
+        questionTitle.textContent = questionTitle2.textContent = "Select the category of the question";
         answersStack.textContent = "Type that into the search to get results or select one of the question topics.";
     }
 }
