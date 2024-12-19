@@ -60,7 +60,6 @@
       removeLastActive();
       searchInput.value = searchInput2.value = "";
       question.classList.add("active-press");
-      answersStack.classList.add("right-panel");
       answersStack.classList.remove("center-title", "searching-title");
       answersStack.innerHTML = "";
       questionTitle.textContent = questionTitle2.textContent =
