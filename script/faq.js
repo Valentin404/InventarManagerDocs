@@ -31,7 +31,7 @@
 
     readMoreBtn.href = location.hostname.includes("127")
       ? location.origin + "/FAQcurrent.html?qwestion=" + el._id
-      : "https://inventory-manager-com.netlify.app/faq?qwestion=" +
+      : "https://inventory-manager-com.netlify.app/faqcurrent?qwestion=" +
       // : "https://valentin404.github.io/InventarManagerDocs/FAQcurrent.html?qwestion=" +
         el._id; // for reliz
     container.append(ask);
