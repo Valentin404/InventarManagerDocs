@@ -257,7 +257,6 @@
     z-index: 100;
     overflow-y: auto;
     transition: 0.3s;
-    opacity: 0;
   }
   .questions-category {
     align-items: center;
@@ -265,9 +264,7 @@
   }
 
   .right-panel.show-panel {
-    opacity: 1;
     right: 0;
-    transform: rotate(360deg);
   }
 
   .active-press {
@@ -292,6 +289,7 @@
     top: 47.5%;
     transform: scale(0.8);
     z-index: 101;
+    transition: .3s;
   }
   .panel-toggle.show-panel {
     transform: rotate(180deg) scale(0.8);
