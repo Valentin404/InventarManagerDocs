@@ -72,22 +72,6 @@
     };
   });
 
-  // questionsCategory.addEventListener("click", (e) => {
-  //   const slot = e.target.slot;
-  //   if(!slot) return;
-  //   const isClickQuestion = e.target.closest(".text");
-  //   const isClickBtn = e.target.closest(".btn");
-  //   console.log(isClickQuestion)
-  //   console.log(isClickBtn, 'isClickBtn')
-  //   if (!isClickQuestion && !isClickBtn) {
-  //     document
-  //       .querySelectorAll("span")
-  //       .forEach((el) => el.classList.remove("active-press"));
-  //     answersStack.innerHTML = "";
-  //     questionTitle.textContent = "Оберіть категорію питання";
-  //   }
-  // });
-
   function searchOptions() {
     answersStack.classList.remove("center-title", "searching-title");
     answersStack.innerHTML = "";
@@ -121,6 +105,4 @@
     panelToggle.classList.toggle("show-panel");
     html.classList.toggle("lock-scroll");
   });
-
-  console.log("-----------faq 0.0.001 ------");
 })();
