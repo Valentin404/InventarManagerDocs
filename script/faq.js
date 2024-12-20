@@ -66,6 +66,9 @@
         question.textContent;
 
       datas.docs.filter((el) => el.type === type).forEach(searchedQuestions);
+      rightPanel.classList.remove("show-panel");
+      panelToggle.classList.remove("show-panel");
+      html.classList.remove("lock-scroll");
     };
   });
 
