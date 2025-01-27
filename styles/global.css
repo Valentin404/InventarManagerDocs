@@ -203,7 +203,9 @@ header {
   letter-spacing: -0.49px;
   font-weight: 400;
 }
-
+.logoTel {
+  display: block;
+}
 .nav-menu-mobile {
   display: contents;
 }
