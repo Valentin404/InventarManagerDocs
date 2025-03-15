@@ -1321,7 +1321,7 @@ const datas = {
                         {
                             teg: 'p',
                             className: "text",
-                            text: "After scanning your QR code, the products will be automatically added to the product list of the second account."
+                            text: "After scanning your QR code, the products will be automatically added to the product list of the another account."
                         }
                     ],
                     className: 'cont',
