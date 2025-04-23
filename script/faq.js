@@ -15,6 +15,12 @@
     lastActive?.classList.remove("active-press");
   }
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const type = urlParams.get("type");
+  const prefix = `&type=${type === 'apple' ? 'apple' : 'android'}`
+ 
+
+
   function searchedQuestions(el) {
     const container = document.createElement("div");
     const readMoreBtn = document.createElement("a");
@@ -30,10 +36,10 @@
     readMoreBtn.textContent = "Read more";
 
     readMoreBtn.href = location.hostname.includes("127")
-      ? location.origin + "/FAQcurrent.html?qwestion=" + el._id
-      : "https://inventory-manager-com.netlify.app/faqcurrent?qwestion=" +
+      ? location.origin + "/FAQcurrent.html?qwestion=" + el._id + prefix
+      : "https://inventory-manager-com.netlify.app/faqcurrent?qwestion=" + prefix
       // : "https://valentin404.github.io/InventarManagerDocs/FAQcurrent.html?qwestion=" +
-        el._id; // for reliz
+      el._id; // for reliz
     container.append(ask);
 
     if (el.img) {
@@ -80,21 +86,21 @@
     const query = this.value.trim();
 
     if (query) {
-        removeLastActive();
-        const filteredQuestions = datas.docs.filter(el => new RegExp(query, "gi").test(el.title));
+      removeLastActive();
+      const filteredQuestions = datas.docs.filter(el => new RegExp(query, "gi").test(el.title));
 
-        if (filteredQuestions.length) {
-            filteredQuestions.forEach(searchedQuestions);
-            questionTitle.textContent = questionTitle2.textContent = "Text for manual entry";
-        } else {
-            answersStack.classList.add("searching-title");
-            answersStack.textContent = "Not found. (Please enter English characters only)";
-        }
-    } else {
+      if (filteredQuestions.length) {
+        filteredQuestions.forEach(searchedQuestions);
+        questionTitle.textContent = questionTitle2.textContent = "Text for manual entry";
+      } else {
         answersStack.classList.add("searching-title");
-        answersStack.textContent = "Type that into the search to get results or select one of the question topics.";
+        answersStack.textContent = "Not found. (Please enter English characters only)";
+      }
+    } else {
+      answersStack.classList.add("searching-title");
+      answersStack.textContent = "Type that into the search to get results or select one of the question topics.";
     }
-}
+  }
 
 
   searchInput.addEventListener("input", searchOptions);
