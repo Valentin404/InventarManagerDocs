@@ -29,7 +29,6 @@ setTimeout(() => {
         window.addEventListener('scroll', anim);
         anim();
     }
-    console.log(animationsElements);
 }, 200);
 
 
